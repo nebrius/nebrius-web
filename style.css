@@ -1,3 +1,4 @@
+/*
 MIT License
 
 Copyright (c) Bryan Hughes
@@ -19,3 +20,55 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+/* prefix rules */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-right: 120pt; /* font-size in .nebrius */
+}
+
+.nebrius {
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(2.025em) translateY(1.5em) rotate(90deg);
+  padding-right: 1.5em;
+  font-size: 120pt;
+  font-weight: 300;
+  border-bottom: 3px solid hsl(300, 100%, 25%);
+  color: hsl(300, 100%, 25%);
+}
+
+.menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: hsl(300, 100%, 25%);;
+  transform: translateX(-8em) translateY(1em) rotate(-45deg);
+  text-align: right;
+}
+
+.menu li {
+  list-style: none;
+  border-bottom: 2px solid hsl(300, 100%, 25%);
+  padding-left: 100px;
+  padding-right: 10px;
+}
+
+.menu li:hover {
+  background-color: hsl(120, 100%, 98%);
+}
+
+.menu a {
+  text-decoration: none;
+  color: purple;
+  font-size: 22pt;
+}
+
+.menu .name {
+  transform: translateX(4.8em) translateY(-5.275em) rotate(90deg);
+  border-bottom: 2px solid hsl(300, 100%, 25%);
+  font-size: 28pt;
+}
