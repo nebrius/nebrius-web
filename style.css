@@ -24,51 +24,86 @@ SOFTWARE.
 
 /* prefix rules */
 
+html, body {
+  overflow: hidden;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  margin-right: 120pt; /* font-size in .nebrius */
+  margin-right: 96pt; /* font-size in .nebrius * 0.8em scaling of container */
+  margin-left: 220px; /* width of menu container */
+  background-color: #ECF1EF;
 }
 
 .nebrius {
   position: fixed;
   right: 0;
   top: 0;
-  transform: translateX(2.025em) translateY(1.5em) rotate(90deg);
-  padding-right: 1.5em;
+  transform-origin: top left;
+  transform: translateX(100%) rotate(90deg) translateX(-0.25em) translateY(-0.25em);
   font-size: 120pt;
   font-weight: 300;
-  border-bottom: 3px solid hsl(300, 100%, 25%);
   color: hsl(300, 100%, 25%);
+}
+
+.nebrius-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  font-size: 120pt;
+  width: 0.8em;
+  height: 75%;
+  border-left: 3px solid hsl(300, 100%, 25%);
 }
 
 .menu {
   position: fixed;
   left: 0;
-  bottom: 0;
-  color: hsl(300, 100%, 25%);;
-  transform: translateX(-8em) translateY(1em) rotate(-45deg);
-  text-align: right;
+  top: 0;
+  border-right: 3px solid hsl(300, 100%, 25%);
+  height: 75%;
+  width: 220px;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
 }
 
 .menu li {
   list-style: none;
+  text-align: right;
   border-bottom: 2px solid hsl(300, 100%, 25%);
-  padding-left: 100px;
-  padding-right: 10px;
+  padding: 1px 1px 1px 1px;
 }
 
 .menu li:hover {
-  background-color: hsl(120, 100%, 98%);
+  background-color: hsl(300, 100%, 25%);
+  color: white;
 }
 
 .menu a {
   text-decoration: none;
-  color: purple;
+  color: hsl(300, 100%, 25%);
   font-size: 22pt;
 }
 
+.menu li:hover a {
+  color: white;
+}
+
 .menu .name {
-  transform: translateX(4.8em) translateY(-5.275em) rotate(90deg);
-  border-bottom: 2px solid hsl(300, 100%, 25%);
+  position: fixed;
+  left: 0;
+  top: 6em;
+  font-style: italic;
+  color: hsl(300, 100%, 25%);
   font-size: 28pt;
+  transform-origin: top right;
+  transform: translateX(-100%) translateX(175px) rotate(-90deg);
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
 }
