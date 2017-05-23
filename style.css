@@ -24,10 +24,6 @@ SOFTWARE.
 
 /* prefix rules */
 
-html, body {
-  overflow: hidden;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   margin-right: 96pt; /* font-size in .nebrius * 0.8em scaling of container */
@@ -46,7 +42,7 @@ body {
   color: hsl(300, 100%, 25%);
 }
 
-.nebrius-container {
+.nebrius-line {
   position: fixed;
   right: 0;
   top: 0;
@@ -54,6 +50,16 @@ body {
   width: 0.8em;
   height: 75%;
   border-left: 3px solid hsl(300, 100%, 25%);
+}
+
+.nebrius-strip {
+  position: fixed;
+  right: 0;
+  top: 0;
+  font-size: 120pt;
+  width: 0.8em;
+  height: 100%;
+  background-color: hsl(30, 100%, 75%);
 }
 
 .menu {
@@ -68,6 +74,7 @@ body {
 .menu ul {
   padding: 0;
   margin: 0;
+  margin-top: 20px;
 }
 
 .menu li {
@@ -92,6 +99,10 @@ body {
   color: white;
 }
 
+.menu .active {
+  font-weight: 600;
+}
+
 .menu .name {
   position: fixed;
   left: 0;
@@ -103,7 +114,18 @@ body {
   transform: translateX(-100%) translateX(175px) rotate(-90deg);
 }
 
-h1 {
+.content {
+  font-weight: 300;
+  font-size: 20pt;
   text-align: center;
+  padding: 30px;
+}
+
+.title-text {
+  margin-bottom: 3.2em;
+  font-size: 28pt;
+}
+
+.em {
   font-style: italic;
 }
