@@ -90,19 +90,28 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  bottom: 0;
-  border-right: 1px solid hsl(280, 100%, 50%);
-  width: 220px;
+  height: 350px;
+  width: 200px;
   overflow: hidden;
+}
+
+.menu .decorator {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 207px;
+  width: 200px;
+  border-right: 1px solid hsl(280, 100%, 50%);
   background-color: hsl(160, 100%, 5%);
 }
 
 .menu ul {
   padding: 0;
   margin: 0;
-  margin-top: 140px;
-  transform-origin: bottom right;
-  transform: rotate(30deg);
+  margin-left: -150px;
+  transform-origin: top right;
+  transform: rotate(-30deg);
+  background-color: hsl(160, 100%, 5%);
 }
 
 .menu li {
@@ -127,19 +136,19 @@ body {
 }
 
 .menu li:nth-child(1) {
-  padding-right: 95px;
+  padding-right: 25px;
 }
 
 .menu li:nth-child(2) {
-  padding-right: 75px;
+  padding-right: 55px;
 }
 
 .menu li:nth-child(3) {
-  padding-right: 45px;
+  padding-right: 80px;
 }
 
 .menu li:nth-child(4) {
-  padding-right: 20px;
+  padding-right: 105px;
 }
 
 .menu .active {
