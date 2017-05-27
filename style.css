@@ -28,7 +28,8 @@ body {
   font-family: 'Roboto', sans-serif;
   margin-right: 96pt; /* font-size in .nebrius * 0.8em scaling of container */
   margin-left: 220px; /* width of menu container */
-  background-color: #ECF1EF;
+  background-color: hsl(280, 100%, 5%);
+  color: white;
 }
 
 .nebrius {
@@ -39,7 +40,7 @@ body {
   transform: translateX(100%) rotate(90deg) translateX(-0.25em) translateY(-0.25em);
   font-size: 120pt;
   font-weight: 300;
-  color: hsl(300, 100%, 25%);
+  color: white;
 }
 
 .nebrius-line {
@@ -48,8 +49,8 @@ body {
   top: 0;
   font-size: 120pt;
   width: 0.8em;
-  height: 75%;
-  border-left: 3px solid hsl(300, 100%, 25%);
+  height: 60%;
+  border-left: 1px solid hsl(280, 100%, 50%);
 }
 
 .nebrius-strip {
@@ -62,41 +63,83 @@ body {
   background-color: hsl(30, 100%, 75%);
 }
 
+.footer {
+  position: fixed;
+  transform-origin: left center;
+  transform: translateX(-20px) rotate(20deg);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ECF1EF; /* page background color to hide content */
+  border-top: 1px solid hsl(280, 100%, 50%);
+}
+
+.footer-contact {
+  width: 60%;
+  background-color: green;
+  padding: 2em;
+}
+
+.footer-copyright {
+  width: 80%;
+  background-color: blue;
+  padding: 2em;
+}
+
 .menu {
   position: fixed;
   left: 0;
   top: 0;
-  border-right: 3px solid hsl(300, 100%, 25%);
-  height: 75%;
+  bottom: 0;
+  border-right: 1px solid hsl(280, 100%, 50%);
   width: 220px;
+  overflow: hidden;
+  background-color: hsl(160, 100%, 5%);
 }
 
 .menu ul {
   padding: 0;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 140px;
+  transform-origin: bottom right;
+  transform: rotate(30deg);
 }
 
 .menu li {
   list-style: none;
   text-align: right;
-  border-bottom: 2px solid hsl(300, 100%, 25%);
-  padding: 1px 1px 1px 1px;
+  border-bottom: 1px solid hsl(280, 100%, 50%);
+  margin-left: -150px;
 }
 
 .menu li:hover {
-  background-color: hsl(300, 100%, 25%);
+  background-color: hsl(280, 100%, 25%);
   color: white;
 }
 
 .menu a {
+  display: block;
   text-decoration: none;
-  color: hsl(300, 100%, 25%);
+  color: white;
+  padding-top: 10px;
   font-size: 22pt;
+  width: 100%;
 }
 
-.menu li:hover a {
-  color: white;
+.menu li:nth-child(1) {
+  padding-right: 95px;
+}
+
+.menu li:nth-child(2) {
+  padding-right: 75px;
+}
+
+.menu li:nth-child(3) {
+  padding-right: 45px;
+}
+
+.menu li:nth-child(4) {
+  padding-right: 20px;
 }
 
 .menu .active {
@@ -106,9 +149,9 @@ body {
 .menu .name {
   position: fixed;
   left: 0;
-  top: 6em;
+  top: 50%;
   font-style: italic;
-  color: hsl(300, 100%, 25%);
+  color: white;
   font-size: 28pt;
   transform-origin: top right;
   transform: translateX(-100%) translateX(175px) rotate(-90deg);
@@ -126,6 +169,16 @@ body {
   font-size: 28pt;
 }
 
+.bonus-text {
+  margin-top: 20em;
+  margin-bottom: 3em;
+  font-size: 22pt;
+}
+
 .em {
   font-style: italic;
+}
+
+.full-image {
+  width: 100%;
 }
