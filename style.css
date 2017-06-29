@@ -104,11 +104,17 @@ a {
   background-color: hsl(280, 100%, 25%);
   color: white;
   height: 100px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  flex-grow: 1;
 }
 
 .footer a {
