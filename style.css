@@ -108,6 +108,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 .footer a {
@@ -123,4 +124,23 @@ a {
 .footer span {
   padding-top: 10px;
   color: lightgray;
+}
+
+/* Talk specific classes */
+
+.talk {
+  margin-bottom: 40px;
+}
+
+.talk-details {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.talk-event {
+  font-style: italic;
+}
+
+.talk-event-details {
+  color: #555;
 }
