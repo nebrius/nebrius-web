@@ -132,6 +132,50 @@ a {
   color: lightgray;
 }
 
+/* About specific classes */
+
+@media (max-width: 1200px) {
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-content {
+    margin-bottom: 40px;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-content {
+    flex-grow: 2;
+    flex-basis: 0;
+    margin-right: 10%;
+  }
+
+  .about-image {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+
+}
+
 /* Talk specific classes */
 
 .talk {
