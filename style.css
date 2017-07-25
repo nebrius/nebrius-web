@@ -203,6 +203,7 @@ a {
 
 .photo-container {
   display: flex;
+  max-width: 1600px;
 }
 
 .photo-container a {
