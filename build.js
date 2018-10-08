@@ -31,8 +31,13 @@ handlebars.registerPartial({
   footer: getTemplate('footer')
 });
 
+const talkData = require(path.join(SRC_DIR, 'talks.json'));
+
 compileFile('index');
-compileFile('talks');
+compileFile('talks', talkData);
+for (const talk of talkData.conferences) {
+  compileTalkFile('con', talk);
+}
 compileFile('photography');
 
 cpy(path.join(__dirname, 'assets/**/*'), DEST_DIR);
@@ -42,8 +47,12 @@ function getTemplate(name) {
   return handlebars.compile(fs.readFileSync(path.join(SRC_DIR, `${name}.handlebars`), 'utf-8'));
 }
 
-function compileFile(name) {
+function compileFile(name, data) {
   const template = getTemplate(name);
-  fs.writeFileSync(path.join(DEST_DIR, `${name}.html`), template());
+  fs.writeFileSync(path.join(DEST_DIR, `${name}.html`), template(data));
+}
+
+function compileTalkFile(type, data) {
+  console.log(type, data);
 }
 
