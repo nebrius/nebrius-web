@@ -64,14 +64,14 @@
       "location": "San Francisco, California",
       "month": "August",
       "year": 2018,
-      "video": "https://www.youtube.com/watch?v=rtikFmUHJoU"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/rtikFmUHJoU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "Hacking with my Anxiety",
       "event": "Anxiety Tech",
       "location": "San Francisco, California",
       "month": "July",
       "year": 2018,
-      "video": "https://www.youtube.com/watch?v=8tB6Eo8iJ70"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/8tB6Eo8iJ70\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "Understanding Functions and \"this\" in the World of ES2017",
       "event": "Node Summit",
@@ -99,28 +99,28 @@
       "location": "Reykjavík, Iceland",
       "month": "March",
       "year": 2018,
-      "video": "https://www.youtube.com/watch?v=M5jb2eEWr0A"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/M5jb2eEWr0A\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "Node.js + Raspberry Pi = Love",
       "event": "IBM Index",
       "location": "San Francisco, California",
       "month": "February",
       "year": 2018,
-      "video": "https://www.youtube.com/watch?v=zBgj-WPiL2g"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/zBgj-WPiL2g\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "TypeScript in Practice",
       "event": "IBM Index",
       "location": "San Francisco, California",
       "month": "February",
       "year": 2018,
-      "video": "https://www.youtube.com/watch?v=t-4ZsNNA93s"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/t-4ZsNNA93s\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "Building a JavaScript Powered, Cloud Connected Smart Aquarium",
       "event": "IBM Index",
       "location": "San Francisco, California",
       "month": "February",
       "year": 2018,
-      "video": "https://www.youtube.com/watch?v=DxlPY6m2vsY"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/DxlPY6m2vsY\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "Why Open Source Fails to Protect Under-Represented Minorities",
       "event": "AlterConf SF",
@@ -148,21 +148,21 @@
       "location": "San Jose, California",
       "month": "October",
       "year": 2017,
-      "video": "https://www.youtube.com/watch?v=9y67eMUzj9A"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/9y67eMUzj9A\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "The Node.js Event Loop: Not So Single Threaded",
       "event": "Node.js Interactive",
       "location": "Vancouver, British Columbia, Canada",
       "month": "October",
       "year": 2017,
-      "video": "https://www.youtube.com/watch?v=zphcsoSJMvM"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/zphcsoSJMvM\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "The Node.js Event Loop: Not So Single Threaded",
       "event": "SeattleJS",
       "location": "Seattle Washington",
       "month": "August",
       "year": 2017,
-      "video": "https://www.youtube.com/watch?v=m-wKUc7TRHM"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/m-wKUc7TRHM\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "TypeScript in Practice",
       "event": "ForwardJS",
@@ -183,7 +183,7 @@
       "location": "Austin, Texas",
       "month": "November",
       "year": 2016,
-      "video": "https://www.youtube.com/watch?v=ATUvAQZaTbM"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ATUvAQZaTbM\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "The Node Community: Past, Present, and Future",
       "event": "NodeConf Italy (keynote)",
@@ -197,14 +197,14 @@
       "location": "Kilkenny, Ireland",
       "month": "October",
       "year": 2016,
-      "video": "https://www.youtube.com/watch?v=8JVEN5lfhc8"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/8JVEN5lfhc8\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "API Design Through the Lens of Photography",
       "event": "CascadiaFest",
       "location": "Semiahmoo, Washington",
       "month": "August",
       "year": 2016,
-      "video": "https://www.youtube.com/watch?v=UGkwBKutxdA"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UGkwBKutxdA\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "Increasing the Candidate Pool with Developer Bootcamps",
       "event": "Node Summit",
@@ -232,14 +232,14 @@
       "location": "Berlin, Germany",
       "month": "September",
       "year": 2015,
-      "video": "https://www.youtube.com/watch?v=UcPCAYpgB7k"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UcPCAYpgB7k\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "Make: JavaScript Robotics",
       "event": "Maker Faire",
       "location": "San Francisco, California",
       "month": "May",
       "year": 2015,
-      "video": "https://www.youtube.com/watch?v=DFTYT_BgBfI"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/DFTYT_BgBfI\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "The Risks and Rewards of Getting Involved",
       "event": "ForwardJS",
@@ -253,21 +253,21 @@
       "location": "Amelia Island, Florida",
       "month": "December",
       "year": 2014,
-      "video": "https://www.youtube.com/watch?v=vZ90Gj1lR5E"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/vZ90Gj1lR5E\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "The Lesser Known Features of ES6",
       "event": "HTML5DevConf",
       "location": "San Francisco, California",
       "month": "October",
       "year": 2014,
-      "video": "https://www.youtube.com/watch?v=OmyNs2zq-J0"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/OmyNs2zq-J0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "The Lesser Known Features of ES6",
       "event": "ForwardJS",
       "location": "San Francisco, California",
       "month": "July",
       "year": 2014,
-      "video": "https://www.youtube.com/watch?v=Nk5Hw2Jmz0Q"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Nk5Hw2Jmz0Q\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }
   ],
   "workshops": [
@@ -336,7 +336,7 @@
       "location": "San Francisco, California",
       "month": "January",
       "year": 2018,
-      "video": "https://www.youtube.com/watch?v=fRus4lYrdM8"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/fRus4lYrdM8\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "Works for Me: Understanding Privilege in Tech",
       "event": "WaffleJS",
@@ -350,7 +350,7 @@
       "location": "San Francisco, California",
       "month": "June",
       "year": 2017,
-      "video": "https://www.youtube.com/watch?v=YCb-Kz5fjEg"
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/YCb-Kz5fjEg\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
     }, {
       "title": "How to do Node.js robotics from a Raspberry Pi.",
       "event": "Connected Devices",

@@ -34,8 +34,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   </div>
   {{/if}}
 
-  {{#if video}}
-  <div><h4>Video</h4><a href="{{{video}}}">View the video</a></div>
+  {{#if videoEmbed}}
+  <div><h4>Video</h4>{{{videoEmbed}}}</div>
+  {{else if video}}
+  <div><h4>Video</h4><a href="{{{video}}}">Watch the video</a></div>
   {{/if}}
 
   {{#if links}}
