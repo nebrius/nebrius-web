@@ -34,28 +34,21 @@ handlebars.registerPartial({
 const talkData = require(path.join(SRC_DIR, 'talks.json'));
 
 compileFile('index');
-compileFile('talks', talkData);
 fs.mkdirSync(path.join(DEST_DIR, 'talk'));
-for (const talk of talkData.conferences) {
-  compileTalkFile('con', talk);
+for (const category in talkData) {
+  for (const talk of talkData[category]) {
+    talk.slug = getSlug(talk);
+    compileTalkFile(talk);
+  }
 }
+compileFile('talks', talkData);
 compileFile('photography');
 
 cpy(path.join(__dirname, 'assets/**/*'), DEST_DIR);
 cpy(path.join(__dirname, 'static/**/*'), path.join(DEST_DIR, 'static'));
 
-function getTemplate(name) {
-  return handlebars.compile(fs.readFileSync(path.join(SRC_DIR, `${name}.handlebars`), 'utf-8'));
-}
-
-function compileFile(name, data) {
-  const template = getTemplate(name);
-  fs.writeFileSync(path.join(DEST_DIR, `${name}.html`), template(data));
-}
-
-function compileTalkFile(type, data) {
-  const template = handlebars.compile(fs.readFileSync(path.join(SRC_DIR, `talk-landing-page.handlebars`), 'utf-8'));
-  const slug = `${data.event}-${data.title}.html`.toLowerCase().replace(/\s/g, '-');
+function getSlug(data) {
+  const slug = `${data.event}-${data.year}-${data.title}.html`.toLowerCase().replace(/\s/g, '-');
   let editedSlug = '';
   for (let i = 0; i < slug.length; i++) {
     const code = slug.charCodeAt(i);
@@ -69,5 +62,19 @@ function compileTalkFile(type, data) {
       editedSlug += String.fromCharCode(code);
     }
   }
-  fs.writeFileSync(path.join(DEST_DIR, 'talk', editedSlug), template(data));
+  return editedSlug;
+}
+
+function getTemplate(name) {
+  return handlebars.compile(fs.readFileSync(path.join(SRC_DIR, `${name}.handlebars`), 'utf-8'));
+}
+
+function compileFile(name, data) {
+  const template = getTemplate(name);
+  fs.writeFileSync(path.join(DEST_DIR, `${name}.html`), template(data));
+}
+
+function compileTalkFile(data) {
+  const template = handlebars.compile(fs.readFileSync(path.join(SRC_DIR, `talk-landing-page.handlebars`), 'utf-8'));
+  fs.writeFileSync(path.join(DEST_DIR, 'talk', data.slug), template(data));
 }

@@ -30,7 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   {{#upcoming}}
 
   <div class="talk">
-    <div class="talk-title">"{{title}}."</div>
+    <div class="talk-title"><a href="/talk/{{slug}}">"{{title}}."</a></div>
     <div class="talk-details">
       <span class="talk-event">{{event}}.</span>
       <span class="talk-event-details">{{location}}. {{month}} {{year}}.</span>
@@ -41,67 +41,37 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   <h3>Conference Talks</h3>
   {{#conferences}}
 
-  {{#if video}}
   <div class="talk">
-    <div class="talk-title"><a href="{{{video}}}">"{{title}}."</a></div>
+    <div class="talk-title"><a href="/talk/{{slug}}">"{{title}}."</a></div>
     <div class="talk-details">
       <span class="talk-event">{{event}}.</span>
       <span class="talk-event-details">{{location}}. {{month}} {{year}}.</span>
     </div>
   </div>
-  {{else}}
-  <div class="talk">
-    <div class="talk-title">"{{title}}."</div>
-    <div class="talk-details">
-      <span class="talk-event">{{event}}.</span>
-      <span class="talk-event-details">{{location}}. {{month}} {{year}}.</span>
-    </div>
-  </div>
-  {{/if}}
   {{/conferences}}
 
   <h3>Conference Workshops</h3>
   {{#workshops}}
 
-  {{#if video}}
   <div class="talk">
-    <div class="talk-title"><a href="{{{video}}}">"{{title}}."</a></div>
+    <div class="talk-title"><a href="/talk/{{slug}}">"{{title}}."</a></div>
     <div class="talk-details">
       <span class="talk-event">{{event}}.</span>
       <span class="talk-event-details">{{location}}. {{month}} {{year}}.</span>
     </div>
   </div>
-  {{else}}
-  <div class="talk">
-    <div class="talk-title">"{{title}}."</div>
-    <div class="talk-details">
-      <span class="talk-event">{{event}}.</span>
-      <span class="talk-event-details">{{location}}. {{month}} {{year}}.</span>
-    </div>
-  </div>
-  {{/if}}
   {{/workshops}}
 
   <h3>Meetup Talks</h3>
   {{#meetups}}
 
-  {{#if video}}
   <div class="talk">
-    <div class="talk-title"><a href="{{{video}}}">"{{title}}."</a></div>
+    <div class="talk-title"><a href="/talk/{{slug}}">"{{title}}."</a></div>
     <div class="talk-details">
       <span class="talk-event">{{event}}.</span>
       <span class="talk-event-details">{{location}}. {{month}} {{year}}.</span>
     </div>
   </div>
-  {{else}}
-  <div class="talk">
-    <div class="talk-title">"{{title}}."</div>
-    <div class="talk-details">
-      <span class="talk-event">{{event}}.</span>
-      <span class="talk-event-details">{{location}}. {{month}} {{year}}.</span>
-    </div>
-  </div>
-  {{/if}}
   {{/meetups}}
 
 </section>
