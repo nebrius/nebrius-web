@@ -15,7 +15,9 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-{{> header path="/talk/{{slug}}" title="{{title}} at {{event}}" description="You can find details for my talk titled {{title}} that I gave at {{event}} in {{month}}, {{year}}" }}
+{{#embed}}
+{{> header path=path title=title description=description }}
+{{/embed}}
 
 <section class="content">
   <h2>"{{title}}"</h2>

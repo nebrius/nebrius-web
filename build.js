@@ -76,5 +76,10 @@ function compileFile(name, data) {
 
 function compileTalkFile(data) {
   const template = handlebars.compile(fs.readFileSync(path.join(SRC_DIR, `talk-landing-page.handlebars`), 'utf-8'));
+  data.embed = {
+    path: `/talk/${data.slug}`,
+    title: `"${data.title}" at ${data.event}`,
+    description: `You can find details for my talk titled ${data.title} that I gave at ${data.event} in ${data.month}, ${data.year}`
+  };
   fs.writeFileSync(path.join(DEST_DIR, 'talk', data.slug), template(data));
 }

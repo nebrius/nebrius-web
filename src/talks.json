@@ -20,7 +20,7 @@
           ]
         }, {
           "title": "Azure DevOps Boards",
-          "url": "https://docs.microsoft.com/en-us/azure/devops/boards/sprints/index?view=vsts",
+          "url": "https://docs.microsoft.com/en-us/azure/devops/boards/sprints/index?WT.mc_id=nodejsinteractive2018-EffectiveAgile-brhugh",
           "description": [
             "There are lots of tools available to help teams manage their agile processes. Bugzilla and JIRA are probably the most well known of these tools, and there are others such as Phabricator, ZenHub, and more.",
             "I use Azure DevOps to track all of my work as an advocate, and have used it on previous teams at Microsoft. Formerly known as Visual Studio Team Services, I've really come to love Azure DevOps. It hits the right blend of features, ease of use, and overall snappiness that I like."
