@@ -6,15 +6,33 @@
       "location": "Vancouver, British Columbia, Canada",
       "month": "October",
       "year": 2018,
-      "abstract": "Most software development follows some sort of agile process these days. Yet, some teams are more effective than others. Why is that? Agile is a tool like any other, and using it effectively requires understanding, skill, and experience.\n\nAt the end of the day, software is written by people for people, and effective agile implementations embrace this fact. This talk will cover values and mindsets necessary to be effective at agile, guidelines, and how to put people first in your agile processes.",
-      "video": null
+      "abstract": [
+        "Most software development follows some sort of agile process these days. Yet, some teams are more effective than others. Why is that? Agile is a tool like any other, and using it effectively requires understanding, skill, and experience.",
+        "At the end of the day, software is written by people for people, and effective agile implementations embrace this fact. This talk will cover values and mindsets necessary to be effective at agile, guidelines, and how to put people first in your agile processes."
+      ],
+      "video": null,
+      "links": [
+        {
+          "title": "Agile Manifesto",
+          "url": "http://agilemanifesto.org/",
+          "description": [
+            "The Agile Manifesto clearly articulates the core concepts common to all agile processes, upon which this talk is loosely based"
+          ]
+        }, {
+          "title": "Azure DevOps Boards",
+          "url": "https://docs.microsoft.com/en-us/azure/devops/boards/sprints/index?view=vsts",
+          "description": [
+            "There are lots of tools available to help teams manage their agile processes. Bugzilla and JIRA are probably the most well known of these tools, and there are others such as Phabricator, ZenHub, and more.",
+            "I use Azure DevOps to track all of my work as an advocate, and have used it on previous teams at Microsoft. Formerly known as Visual Studio Team Services, I've really come to love Azure DevOps. It hits the right blend of features, ease of use, and overall snappiness that I like."
+          ]
+        }
+      ]
     }, {
       "title": "TypeScript in Practice",
       "event": "Silicon Valley Code Camp",
       "location": "San Jose, California",
       "month": "October",
       "year": 2018,
-      "abstract": "",
       "video": null
     }, {
       "title": "Understanding Functions and \"this\" in the World of ES2018",
@@ -22,7 +40,6 @@
       "location": "San Jose, California",
       "month": "October",
       "year": 2018,
-      "abstract": "",
       "video": null
     }, {
       "title": "Johnny-Five and the Rise of JavaScript Hardware",
@@ -30,7 +47,6 @@
       "location": "London, United Kingdom",
       "month": "October",
       "year": 2018,
-      "abstract": "",
       "video": null
     }
   ],
@@ -41,7 +57,6 @@
       "location": "Carlsbad, California",
       "month": "August",
       "year": 2018,
-      "abstract": "",
       "video": null
     }, {
       "title": "The Mental Health Impacts of Growing Up Queer",
@@ -49,7 +64,6 @@
       "location": "San Francisco, California",
       "month": "August",
       "year": 2018,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=rtikFmUHJoU"
     }, {
       "title": "Hacking with my Anxiety",
@@ -57,7 +71,6 @@
       "location": "San Francisco, California",
       "month": "July",
       "year": 2018,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=8tB6Eo8iJ70"
     }, {
       "title": "Understanding Functions and \"this\" in the World of ES2017",
@@ -65,7 +78,6 @@
       "location": "San Francisco",
       "month": "July",
       "year": 2018,
-      "abstract": "",
       "video": "https://vimeo.com/287510109"
     }, {
       "title": "TypeScript in Practice",
@@ -73,7 +85,6 @@
       "location": "San Jose, California",
       "month": "June",
       "year": 2018,
-      "abstract": "",
       "video": null
     }, {
       "title": "Hardware 101: Understanding the T in IoT",
@@ -81,7 +92,6 @@
       "location": "Virginia Beach, Virginia",
       "month": "May",
       "year": 2018,
-      "abstract": "",
       "video": null
     }, {
       "title": "'Works for Me': Understanding Privilege in Tech",
@@ -89,7 +99,6 @@
       "location": "Reykjavík, Iceland",
       "month": "March",
       "year": 2018,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=M5jb2eEWr0A"
     }, {
       "title": "Node.js + Raspberry Pi = Love",
@@ -97,7 +106,6 @@
       "location": "San Francisco, California",
       "month": "February",
       "year": 2018,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=zBgj-WPiL2g"
     }, {
       "title": "TypeScript in Practice",
@@ -105,7 +113,6 @@
       "location": "San Francisco, California",
       "month": "February",
       "year": 2018,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=t-4ZsNNA93s"
     }, {
       "title": "Building a JavaScript Powered, Cloud Connected Smart Aquarium",
@@ -113,7 +120,6 @@
       "location": "San Francisco, California",
       "month": "February",
       "year": 2018,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=DxlPY6m2vsY"
     }, {
       "title": "Why Open Source Fails to Protect Under-Represented Minorities",
@@ -121,7 +127,6 @@
       "location": "San Francisco, California",
       "month": "December",
       "year": 2017,
-      "abstract": "",
       "video": null
     }, {
       "title": "The Node.js Event Loop: Not So Single Threaded",
@@ -129,7 +134,6 @@
       "location": "Nashville, Tennessee",
       "month": "November",
       "year": 2017,
-      "abstract": "",
       "video": null
     }, {
       "title": "Master of Ceremonies",
@@ -144,7 +148,6 @@
       "location": "San Jose, California",
       "month": "October",
       "year": 2017,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=9y67eMUzj9A"
     }, {
       "title": "The Node.js Event Loop: Not So Single Threaded",
@@ -152,7 +155,6 @@
       "location": "Vancouver, British Columbia, Canada",
       "month": "October",
       "year": 2017,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=zphcsoSJMvM"
     }, {
       "title": "The Node.js Event Loop: Not So Single Threaded",
@@ -160,7 +162,6 @@
       "location": "Seattle Washington",
       "month": "August",
       "year": 2017,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=m-wKUc7TRHM"
     }, {
       "title": "TypeScript in Practice",
@@ -168,7 +169,6 @@
       "location": "San Francisco, California",
       "month": "July",
       "year": 2017,
-      "abstract": "",
       "video": null
     }, {
       "title": "Works for Me: Understanding Privilege in Tech",
@@ -176,7 +176,6 @@
       "location": "San Francisco, California",
       "month": "July",
       "year": 2017,
-      "abstract": "",
       "video": null
     }, {
       "title": "Best Practices using TypeScript with Node.js",
@@ -184,7 +183,6 @@
       "location": "Austin, Texas",
       "month": "November",
       "year": 2016,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=ATUvAQZaTbM"
     }, {
       "title": "The Node Community: Past, Present, and Future",
@@ -192,7 +190,6 @@
       "location": "Desenzano del Garda, Italy",
       "month": "October",
       "year": 2016,
-      "abstract": "",
       "video": null
     }, {
       "title": "The Node Community: Past, Present, and Future",
@@ -200,7 +197,6 @@
       "location": "Kilkenny, Ireland",
       "month": "October",
       "year": 2016,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=8JVEN5lfhc8"
     }, {
       "title": "API Design Through the Lens of Photography",
@@ -208,7 +204,6 @@
       "location": "Semiahmoo, Washington",
       "month": "August",
       "year": 2016,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=UGkwBKutxdA"
     }, {
       "title": "Increasing the Candidate Pool with Developer Bootcamps",
@@ -216,7 +211,6 @@
       "location": "San Francisco, California",
       "month": "July",
       "year": 2016,
-      "abstract": "",
       "video": null
     }, {
       "title": "API Design Through the Lens of Photography",
@@ -224,7 +218,6 @@
       "location": "Portland, Oregon",
       "month": "June",
       "year": 2016,
-      "abstract": "",
       "video": null
     }, {
       "title": "API Design Through the Lens of Photography",
@@ -232,7 +225,6 @@
       "location": "Detroit, Michigan",
       "month": "May",
       "year": 2016,
-      "abstract": "",
       "video": null
     }, {
       "title": "The Risks and Rewards of Getting Involved and How to Do it",
@@ -240,7 +232,6 @@
       "location": "Berlin, Germany",
       "month": "September",
       "year": 2015,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=UcPCAYpgB7k"
     }, {
       "title": "Make: JavaScript Robotics",
@@ -248,7 +239,6 @@
       "location": "San Francisco, California",
       "month": "May",
       "year": 2015,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=DFTYT_BgBfI"
     }, {
       "title": "The Risks and Rewards of Getting Involved",
@@ -256,7 +246,6 @@
       "location": "San Francisco, California",
       "month": "February",
       "year": 2015,
-      "abstract": "",
       "video": null
     }, {
       "title": "Electronic Fundamentals Survey",
@@ -264,7 +253,6 @@
       "location": "Amelia Island, Florida",
       "month": "December",
       "year": 2014,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=vZ90Gj1lR5E"
     }, {
       "title": "The Lesser Known Features of ES6",
@@ -272,7 +260,6 @@
       "location": "San Francisco, California",
       "month": "October",
       "year": 2014,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=OmyNs2zq-J0"
     }, {
       "title": "The Lesser Known Features of ES6",
@@ -280,7 +267,6 @@
       "location": "San Francisco, California",
       "month": "July",
       "year": 2014,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=Nk5Hw2Jmz0Q"
     }
   ],
@@ -291,7 +277,6 @@
       "location": "San Francisco, California",
       "month": "July",
       "year": 2018,
-      "abstract": "",
       "video": null
     }, {
       "title": "Node.js Serverless Design and Best Practices",
@@ -299,7 +284,6 @@
       "location": "Denver, Colorado",
       "month": "June",
       "year": 2018,
-      "abstract": "",
       "video": null
     }, {
       "title": "Introduction to NodeBots",
@@ -307,7 +291,6 @@
       "location": "San Francisco, California",
       "month": "July",
       "year": 2017,
-      "abstract": "",
       "video": null
     }, {
       "title": "TypeScript in Practice",
@@ -315,7 +298,6 @@
       "location": "Denver, Colorado",
       "month": "June",
       "year": 2017,
-      "abstract": "",
       "video": null
     }, {
       "title": "Windows 10 IoT Core, Raspberry Pi, and DotStars",
@@ -323,7 +305,6 @@
       "location": "Kilkenny, Ireland",
       "month": "October",
       "year": 2016,
-      "abstract": "",
       "video": null
     }, {
       "title": "NeoPixels and Particle Photons",
@@ -331,7 +312,6 @@
       "location": "San Francisco, California",
       "month": "July",
       "year": 2016,
-      "abstract": "",
       "video": null
     }, {
       "title": "NodeBoats",
@@ -339,7 +319,6 @@
       "location": "Amelia Island, Florida",
       "month": "May",
       "year": 2015,
-      "abstract": "",
       "video": null
     }, {
       "title": "Building Your First Robot",
@@ -347,7 +326,6 @@
       "location": "San Francisco, California",
       "month": "February",
       "year": 2015,
-      "abstract": "",
       "video": null
     }
   ],
@@ -358,7 +336,6 @@
       "location": "San Francisco, California",
       "month": "January",
       "year": 2018,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=fRus4lYrdM8"
     }, {
       "title": "Works for Me: Understanding Privilege in Tech",
@@ -366,7 +343,6 @@
       "location": "San Francisco, California",
       "month": "August",
       "year": 2017,
-      "abstract": "",
       "video": null
     }, {
       "title": "Introduction and Best Practices for TypeScript",
@@ -374,7 +350,6 @@
       "location": "San Francisco, California",
       "month": "June",
       "year": 2017,
-      "abstract": "",
       "video": "https://www.youtube.com/watch?v=YCb-Kz5fjEg"
     }, {
       "title": "How to do Node.js robotics from a Raspberry Pi.",
@@ -382,7 +357,6 @@
       "location": "San Francisco, California",
       "month": "March",
       "year": 2016,
-      "abstract": "",
       "video": null
     }, {
       "title": "Successfully Hacking In Your Spare Time.",
@@ -390,7 +364,6 @@
       "location": "Los Angeles, California",
       "month": "June",
       "year": 2015,
-      "abstract": "",
       "video": "https://vimeo.com/131993092"
     }, {
       "title": "How to Give a Conference Talk.",
@@ -398,7 +371,6 @@
       "location": "Sacramento, California",
       "month": "February",
       "year": 2015,
-      "abstract": "",
       "video": null
     }
   ]

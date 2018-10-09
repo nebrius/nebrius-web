@@ -18,12 +18,38 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 {{> header }}
 
 <section class="content">
-  <h1>"{{title}}"</h1>
-  <div class="talk-event">{{event}}.</div>
-  <div class="talk-event-details">{{location}}. {{month}} {{year}}.</div>
-  <div>{{abstract}}</div>
+  <h2>"{{title}}"</h2>
+  <div class="talk-page-event">{{event}}.</div>
+  <div class="talk-page-event-location">{{location}}.</div>
+  <div class="talk-page-event-date">{{month}} {{year}}.</div>
+
+  {{#if abstract}}
+  <div>
+    <h4>Abstract</h4>
+    {{#abstract}}
+      <p>{{.}}</p>
+    {{/abstract}}
+  </div>
+  {{/if}}
+
   {{#if video}}
-  <a href="{{{video}}}">Video</a>
+  <div><h4>Video</h4><a href="{{{video}}}">View the video</a></div>
+  {{/if}}
+
+  {{#if links}}
+  <div>
+    <h4>Useful Links</h4>
+    {{#links}}
+    <div>
+      <div class="talk-page-link-anchor"><a href="{{url}}">{{title}}</a></div>
+      {{#if description}}
+      <div class="talk-page-link-description">
+        {{#description}}<p>{{.}}</p>{{/description}}
+      </div>
+      {{/if}}
+    </div>
+    {{/links}}
+  </div>
   {{/if}}
 </section>
 
