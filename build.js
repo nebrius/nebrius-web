@@ -35,6 +35,7 @@ const talkData = require(path.join(SRC_DIR, 'talks.json'));
 
 compileFile('index');
 compileFile('talks', talkData);
+fs.mkdirSync(path.join(DEST_DIR, 'talk'));
 for (const talk of talkData.conferences) {
   compileTalkFile('con', talk);
 }
@@ -53,6 +54,20 @@ function compileFile(name, data) {
 }
 
 function compileTalkFile(type, data) {
-  console.log(type, data);
+  const template = handlebars.compile(fs.readFileSync(path.join(SRC_DIR, `talk-landing-page.handlebars`), 'utf-8'));
+  const slug = `${data.event}-${data.title}.html`.toLowerCase().replace(/\s/g, '-');
+  let editedSlug = '';
+  for (let i = 0; i < slug.length; i++) {
+    const code = slug.charCodeAt(i);
+    if (
+      (code >= 48 && code <= 57) || // 0-9
+      (code >= 65 && code >= 90) || // A-Z
+      (code >= 97 && code >= 122) || // a-z
+      code === 45 || // -
+      code === 46 // .
+    ) {
+      editedSlug += String.fromCharCode(code);
+    }
+  }
+  fs.writeFileSync(path.join(DEST_DIR, 'talk', editedSlug), template(data));
 }
-
