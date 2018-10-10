@@ -34,21 +34,99 @@
       "location": "San Jose, California",
       "month": "October",
       "year": 2018,
-      "video": null
+      "abstract": [
+        "Are you interested in TypeScript, but not sure where to start? Like most modern web development, it can feel like there are too many options and no obvious answers.",
+        "This talk will share best practices for integrating TypeScript into both Node.js and Webpack+React/JSX workflows, how you can benefit from the features TypeScript offers, and answer common questions about TypeScript."
+      ],
+      "video": null,
+      "sessionLink": "https://www.siliconvalley-codecamp.com/Session/2018/typescript-in-practice",
+      "links": [
+        {
+          "title": "TypeScript Homepage",
+          "url": "http://www.typescriptlang.org/",
+          "description": [
+            "Visit the TypeScript homepage to download TypeScript, learn how to get started, dive into the language, experiment in the playground, and more."
+          ]
+        }
+      ]
     }, {
       "title": "Understanding Functions and \"this\" in the World of ES2018",
       "event": "Silicon Valley Code Camp",
       "location": "San Jose, California",
       "month": "October",
       "year": 2018,
-      "video": null
+      "abstract": [
+        "The \"this\" keyword has long been a source of confusion, and new features added to JavaScript in recent years have muddled the picture even more.",
+        "This talk will walk you through the details of how \"this\" works in the context of modern JavaScript. We'll cover the differences between function declarations, function expressions, arrow functions, object-shorthand function notation, and class fields, as well as best practices when integrating with other ES2015+ goodies."
+      ],
+      "video": null,
+      "sessionLink": "https://www.siliconvalley-codecamp.com/Session/2018/understanding-functions-and-this-in-the-world-of-es2018",
+      "links": [
+        {
+          "title": "MDN's \"this\" Documentation",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this",
+          "description": [
+            "MDN has good documentation on the basic's of how this works. I would especially recommend reading up on how strict mode affects this, which was not touched upon in the talk."
+          ]
+        },
+        {
+          "title": "Class Fields Proposal",
+          "url": "https://github.com/tc39/proposal-class-fields",
+          "description": [
+            "This is the formal specification proposal for Class Fields in JavaScript. It has a number of helpful examples I recommend checking out."
+          ]
+        },
+        {
+          "title": "React Events Documentation",
+          "url": "https://reactjs.org/docs/handling-events.html",
+          "description": [
+            "The React documentation does a good job explaining the complications with \"this\" event handlers, performance implications, etc."
+          ]
+        }
+      ]
     }, {
       "title": "Johnny-Five and the Rise of JavaScript Hardware",
       "event": "View Source Conference",
       "location": "London, United Kingdom",
       "month": "October",
       "year": 2018,
-      "video": null
+      "abstract": [
+        "Johnny-Five was created 6 years ago and in the process kickstarted the JavaScript robotics movement and JavaScript based IoT. J5, as we call it, has been around ever since the rise of modern IoT, and the project has a lot to teach us.",
+        "JavaScript and J5 brings a lot to the table for hardware. The asynchronous nature of JavaScript fits perfectly with real-world sensors, and the digital UI origins of JavaScript dovetail nicely with the physical UI of hardware. Most importantly, we focused the project on non-experts and we cultivated a welcoming, inclusive community.",
+        "Knowing these lessons and more are critical going forward if we hope to create open and ethical IoT ecosystem."
+      ],
+      "video": null,
+      "sessionLink": "https://events.mozilla.org/viewsource2018",
+      "links": [
+        {
+          "title": "Johnny-Five",
+          "url": "http://johnny-five.io/",
+          "description": [
+            "The Johnny-Five website includes instructions for getting started, API documentation, examples, and more."
+          ]
+        },
+        {
+          "title": "Raspi IO Repository",
+          "url": "https://github.com/nebrius/raspi-io/",
+          "description": [
+            "The Raspi IO GitHub repository contains the source code and documentation for my project that adds Raspberry Pi support to Johnny-Five"
+          ]
+        },
+        {
+          "title": "Azure IoT Edge",
+          "url": "https://docs.microsoft.com/en-us/azure/iot-edge/?WT.mc_id=viewsource-JohnnyFive-brhugh",
+          "description": [
+            "Azure IoT Edge is a managed service that makes it easy to deploy, manage, and communicate with IoT devices from the cloud."
+          ]
+        },
+        {
+          "title": "IoT Edge for Makers",
+          "url": "https://github.com/nebrius/johnny-five-iot-edge",
+          "description": [
+            "IoT Edge for Makers is a module for IoT Edge that makes it easy to integrate an IoT Edge solution with hardware. IoT Edge for Makers uses Johnny-Five and Raspi IO under the hood, and will look familiar to both IoT Edge and Johnny-Five developers."
+          ]
+        }
+      ]
     }
   ],
   "conferences": [
