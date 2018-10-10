@@ -21,7 +21,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 <section class="content">
   <h2>"{{title}}"</h2>
+  {{#if sessionLink}}
+  <div class="talk-page-event"><a href="{{sessionLink}}">{{event}}.</a></div>
+  {{else}}
   <div class="talk-page-event">{{event}}.</div>
+  {{/if}}
   <div class="talk-page-event-location">{{location}}.</div>
   <div class="talk-page-event-date">{{month}} {{year}}.</div>
 
