@@ -1,34 +1,6 @@
 {
   "upcoming": [
     {
-      "title": "Effective Agile Processes: It's All About People",
-      "event": "Node+JS Interactive",
-      "location": "Vancouver, British Columbia, Canada",
-      "month": "October",
-      "year": 2018,
-      "abstract": [
-        "Most software development follows some sort of agile process these days. Yet, some teams are more effective than others. Why is that? Agile is a tool like any other, and using it effectively requires understanding, skill, and experience.",
-        "At the end of the day, software is written by people for people, and effective agile implementations embrace this fact. This talk will cover values and mindsets necessary to be effective at agile, guidelines, and how to put people first in your agile processes."
-      ],
-      "video": null,
-      "sessionLink": "https://jsi2018.sched.com/event/H0w1/effective-agile-processes-its-all-about-people-bryan-hughes-microsoft",
-      "links": [
-        {
-          "title": "Agile Manifesto",
-          "url": "http://agilemanifesto.org/",
-          "description": [
-            "The Agile Manifesto clearly articulates the core concepts common to all agile processes, upon which this talk is loosely based"
-          ]
-        }, {
-          "title": "Azure DevOps Boards",
-          "url": "https://docs.microsoft.com/en-us/azure/devops/boards/sprints/index?WT.mc_id=nodejsinteractive2018-EffectiveAgile-brhugh",
-          "description": [
-            "There are lots of tools available to help teams manage their agile processes. Bugzilla and JIRA are probably the most well known of these tools, and there are others such as Phabricator, ZenHub, and more.",
-            "I use Azure DevOps to track all of my work as an advocate, and have used it on previous teams at Microsoft. Formerly known as Visual Studio Team Services, I've really come to love Azure DevOps. It hits the right blend of features, ease of use, and overall snappiness that I like."
-          ]
-        }
-      ]
-    }, {
       "title": "TypeScript in Practice",
       "event": "Silicon Valley Code Camp",
       "location": "San Jose, California",
@@ -131,6 +103,34 @@
   ],
   "conferences": [
     {
+      "title": "Effective Agile Processes: It's All About People",
+      "event": "Node+JS Interactive",
+      "location": "Vancouver, British Columbia, Canada",
+      "month": "October",
+      "year": 2018,
+      "abstract": [
+        "Most software development follows some sort of agile process these days. Yet, some teams are more effective than others. Why is that? Agile is a tool like any other, and using it effectively requires understanding, skill, and experience.",
+        "At the end of the day, software is written by people for people, and effective agile implementations embrace this fact. This talk will cover values and mindsets necessary to be effective at agile, guidelines, and how to put people first in your agile processes."
+      ],
+      "video": null,
+      "sessionLink": "https://jsi2018.sched.com/event/H0w1/effective-agile-processes-its-all-about-people-bryan-hughes-microsoft",
+      "links": [
+        {
+          "title": "Agile Manifesto",
+          "url": "http://agilemanifesto.org/",
+          "description": [
+            "The Agile Manifesto clearly articulates the core concepts common to all agile processes, upon which this talk is loosely based"
+          ]
+        }, {
+          "title": "Azure DevOps Boards",
+          "url": "https://docs.microsoft.com/en-us/azure/devops/boards/sprints/index?WT.mc_id=nodejsinteractive2018-EffectiveAgile-brhugh",
+          "description": [
+            "There are lots of tools available to help teams manage their agile processes. Bugzilla and JIRA are probably the most well known of these tools, and there are others such as Phabricator, ZenHub, and more.",
+            "I use Azure DevOps to track all of my work as an advocate, and have used it on previous teams at Microsoft. Formerly known as Visual Studio Team Services, I've really come to love Azure DevOps. It hits the right blend of features, ease of use, and overall snappiness that I like."
+          ]
+        }
+      ]
+    }, {
       "title": "Hacking with my Anxiety",
       "event": "JSConf US",
       "location": "Carlsbad, California",
