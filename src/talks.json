@@ -1,27 +1,6 @@
 {
   "upcoming": [
     {
-      "title": "TypeScript in Practice",
-      "event": "Silicon Valley Code Camp",
-      "location": "San Jose, California",
-      "month": "October",
-      "year": 2018,
-      "abstract": [
-        "Are you interested in TypeScript, but not sure where to start? Like most modern web development, it can feel like there are too many options and no obvious answers.",
-        "This talk will share best practices for integrating TypeScript into both Node.js and Webpack+React/JSX workflows, how you can benefit from the features TypeScript offers, and answer common questions about TypeScript."
-      ],
-      "video": null,
-      "sessionLink": "https://www.siliconvalley-codecamp.com/Session/2018/typescript-in-practice",
-      "links": [
-        {
-          "title": "TypeScript Homepage",
-          "url": "http://www.typescriptlang.org/",
-          "description": [
-            "Visit the TypeScript homepage to download TypeScript, learn how to get started, dive into the language, experiment in the playground, and more."
-          ]
-        }
-      ]
-    }, {
       "title": "Understanding Functions and \"this\" in the World of ES2018",
       "event": "Silicon Valley Code Camp",
       "location": "San Jose, California",
@@ -103,6 +82,28 @@
   ],
   "conferences": [
     {
+      "title": "TypeScript in Practice",
+      "event": "Silicon Valley Code Camp",
+      "location": "San Jose, California",
+      "month": "October",
+      "year": 2018,
+      "abstract": [
+        "Are you interested in TypeScript, but not sure where to start? Like most modern web development, it can feel like there are too many options and no obvious answers.",
+        "This talk will share best practices for integrating TypeScript into both Node.js and Webpack+React/JSX workflows, how you can benefit from the features TypeScript offers, and answer common questions about TypeScript."
+      ],
+      "video": null,
+      "slideEmbed": "<iframe src=\"//www.slideshare.net/slideshow/embed_code/key/4yk8fUnG1hbFO2\" width=\"595\" height=\"485\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe>",
+      "sessionLink": "https://www.siliconvalley-codecamp.com/Session/2018/typescript-in-practice",
+      "links": [
+        {
+          "title": "TypeScript Homepage",
+          "url": "http://www.typescriptlang.org/",
+          "description": [
+            "Visit the TypeScript homepage to download TypeScript, learn how to get started, dive into the language, experiment in the playground, and more."
+          ]
+        }
+      ]
+    }, {
       "title": "Effective Agile Processes: It's All About People",
       "event": "Node+JS Interactive",
       "location": "Vancouver, British Columbia, Canada",
