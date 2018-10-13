@@ -20,28 +20,27 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <section class="content">
   <h1>Hi. I build things.</h1>
 
+  <p>
+    I've been building open source projects since 2011, and I enjoy building
+    things that I find interesting and useful to me. Sometimes these projects are
+    useful to other people too and have gained popularity, and sometimes not. I
+    mostly build for myself though so that I can learn something new.
+  </p>
+  <p>
+    Below is a sampling of projects that I have built that I think are interesting.
+    For the full list of what I've built, visit my
+    <a href="https://github.com/nebrius/">GitHub profile</a>.
+  </p>
+  {{#projects}}
+
   <div class="project-container">
-    <p>Raspi IO and Raspi.js</p>
-    <p>Raspi-io is a Firmata API compatible library for Raspbian running on the Raspberry Pi that can be used as an I/O plugin with Johnny-Five. The API docs for this module can be found on the Johnny-Five Wiki, except for the constructor which is documented below. Raspi IO supports all models of the Raspberry Pi, except for the Model A.</p>
-  </div>
-
-  Raver Lights
-
-  Request Inspector
-
-  Aquarium Control
-
-  Seriallog
-
-  TypeBot
-
-  Node.js
-
-  Commascript
-
-  Code Analyzer
-
-  Dissertation
+    <div class="project-title"><a href="{{url}}">{{title}}</a></div>
+    <div class="project-description">
+      {{#description}}
+      <p>{{.}}</p>
+      {{/description}}
+    </div>
+  {{/projects}}
 </section>
 
 {{> footer }}

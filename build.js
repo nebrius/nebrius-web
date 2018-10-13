@@ -33,6 +33,7 @@ handlebars.registerPartial({
 
 const talkData = require(path.join(SRC_DIR, 'talks.json'));
 const photoData = require(path.join(SRC_DIR, 'photos.json'));
+const projectsData = require(path.join(SRC_DIR, 'projects.json'));
 
 compileFile('index');
 fs.mkdirSync(path.join(DEST_DIR, 'talk'));
@@ -44,6 +45,7 @@ for (const category in talkData) {
 }
 compileFile('talks', talkData);
 compileFile('photography', photoData);
+compileFile('projects', projectsData);
 
 cpy(path.join(__dirname, 'assets/**/*'), DEST_DIR);
 cpy(path.join(__dirname, 'static/**/*'), path.join(DEST_DIR, 'static'));

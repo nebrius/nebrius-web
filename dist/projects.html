@@ -275,14 +275,14 @@ a {
 
 }
 </style>
-<title>&quot;Works for Me: Understanding Privilege in Tech&quot; at WaffleJS</title>
+<title></title>
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:title" content="&quot;Works for Me: Understanding Privilege in Tech&quot; at WaffleJS" />
+<meta property="og:title" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://nebri.us/static/me-small.jpg" />
-<meta property="og:url" content="https://nebri.us/talk/wafflejs-2017-works-for-me-understanding-privilege-in-tech.html" />
-<meta property="og:description" content="You can find details for my talk titled Works for Me: Understanding Privilege in Tech that I gave at WaffleJS in August, 2017" />
+<meta property="og:url" content="https://nebri.us" />
+<meta property="og:description" content="" />
 <link rel="shortcut icon" href="favicon.png">
 </head>
 
@@ -292,20 +292,73 @@ a {
   <ul>
     <li><a href="/">about</a></li>
     <li><a href="/talks.html">talks</a></li>
-    <li><a href="/projects.html">projects</a></li>
+    <li><a class="active" href="/projects.html">projects</a></li>
     <li><a href="/photography.html">photography</a></li>
   </ul>
 </nav>
 
 <section class="content">
-  <h2>"Works for Me: Understanding Privilege in Tech"</h2>
-  <div class="talk-page-event">WaffleJS.</div>
-  <div class="talk-page-event-location">San Francisco, California.</div>
-  <div class="talk-page-event-date">August 2017.</div>
+  <h1>Hi. I build things.</h1>
 
+  <p>
+    I've been building open source projects since 2011, and I enjoy building
+    things that I find interesting and useful to me. Sometimes these projects are
+    useful to other people too and have gained popularity, and sometimes not. I
+    mostly build for myself though so that I can learn something new.
+  </p>
+  <p>
+    Below is a sampling of projects that I have built that I think are interesting.
+    For the full list of what I've built, visit my
+    <a href="https://github.com/nebrius/">GitHub profile</a>.
+  </p>
 
+  <div class="project-container">
+    <div class="project-title"><a href="https://github.com/nebrius/raspi-io">Raspi IO</a></div>
+    <div class="project-description">
+      <p>Raspi IO is a Firmata API compatible library for Raspbian running on the Raspberry Pi that can be used as an I/O plugin with Johnny-Five.</p>
+      <p>Raspi IO is built on Raspi.js, which I wrote to make it easier to work with hardware on the Raspberry Pi in a consistent way across disparate peripherals.</p>
+    </div>
 
+  <div class="project-container">
+    <div class="project-title"><a href="https://github.com/nebrius/raver-lights">Raver Lights</a></div>
+    <div class="project-description">
+      <p>A wirelessly distributed lighting control system for programmable LED art.</p>
+      <p>For this project, I created a pair of custom boards based on the ESP8266 that controls WS2812b 5V LED. A board in &quot;control&quot; mode syncs patterns to all boards in &quot;receive&quot; mode, with millisecond accuracy.</p>
+    </div>
 
+  <div class="project-container">
+    <div class="project-title"><a href="">Aquarium Control</a></div>
+    <div class="project-description">
+      <p>An Azure-based system for controlling the lights and monitoring temperature in my Aquarium with a Raspberry Pi.</p>
+      <p>This system has a web UI for controlling the lighting, all backed by a Node.js Web App Service and Azure SQL instance in the cloud.</p>
+    </div>
+
+  <div class="project-container">
+    <div class="project-title"><a href="https://github.com/nebrius/contact-scheduler">Contact Scheduler</a></div>
+    <div class="project-description">
+      <p>A desktop application for scheduling times to reach out to folks regularly that plays nicely with my anxiety.</p>
+      <p>The app is built in Electron.js, and remixes common UI patterns around notifications to make it more effective and less anxiety enducing.</p>
+    </div>
+
+  <div class="project-container">
+    <div class="project-title"><a href="https://github.com/nebrius/request-inspector">Request Inspector</a></div>
+    <div class="project-description">
+      <p>A prototype request timing diagnostic tool for Web and Node.js applications.</p>
+    </div>
+
+  <div class="project-container">
+    <div class="project-title"><a href="https://github.com/nebrius/commascript">CommaScript</a></div>
+    <div class="project-description">
+      <p>A statically typed, backwards compatible dialect of JavaScript.</p>
+      <p>An old experiment into how we could get static typing into JavaScript without new syntax. No longer under development.</p>
+    </div>
+
+  <div class="project-container">
+    <div class="project-title"><a href="https://github.com/nebrius/dissertation_project">Dissertation</a></div>
+    <div class="project-description">
+      <p>The source code for the firmware part of my dissertation project.</p>
+      <p>For my dissertation, I created an interconnect protocol based on SPI for creating clusters of DSPs to perform parallel computing using MPI</p>
+    </div>
 </section>
 
 <!--

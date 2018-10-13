@@ -195,6 +195,17 @@ a {
   padding-left: 8px;
 }
 
+/* Project specific classes */
+
+.project-title {
+  font-size: 1.2em;
+}
+
+.project-description {
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
 /* Photography specific classes */
 
 .photo-forward {
@@ -264,6 +275,7 @@ a {
   <ul>
     <li><a{{#if index}} class="active"{{/if}} href="/">about</a></li>
     <li><a{{#if talks}} class="active"{{/if}} href="/talks.html">talks</a></li>
+    <li><a{{#if projects}} class="active"{{/if}} href="/projects.html">projects</a></li>
     <li><a{{#if photography}} class="active"{{/if}} href="/photography.html">photography</a></li>
   </ul>
 </nav>

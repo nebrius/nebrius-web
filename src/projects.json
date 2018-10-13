@@ -1,3 +1,53 @@
 {
-  
+  "projects": [
+    {
+      "title": "Raspi IO",
+      "url": "https://github.com/nebrius/raspi-io",
+      "description": [
+        "Raspi IO is a Firmata API compatible library for Raspbian running on the Raspberry Pi that can be used as an I/O plugin with Johnny-Five.",
+        "Raspi IO is built on Raspi.js, which I wrote to make it easier to work with hardware on the Raspberry Pi in a consistent way across disparate peripherals."
+      ]
+    }, {
+      "title": "Raver Lights",
+      "url": "https://github.com/nebrius/raver-lights",
+      "description": [
+        "A wirelessly distributed lighting control system for programmable LED art.",
+        "For this project, I created a pair of custom boards based on the ESP8266 that controls WS2812b 5V LED. A board in \"control\" mode syncs patterns to all boards in \"receive\" mode, with millisecond accuracy."
+      ]
+    }, {
+      "title": "Aquarium Control",
+      "url": "",
+      "description": [
+        "An Azure-based system for controlling the lights and monitoring temperature in my Aquarium with a Raspberry Pi.",
+        "This system has a web UI for controlling the lighting, all backed by a Node.js Web App Service and Azure SQL instance in the cloud."
+      ]
+    }, {
+      "title": "Contact Scheduler",
+      "url": "https://github.com/nebrius/contact-scheduler",
+      "description": [
+        "A desktop application for scheduling times to reach out to folks regularly that plays nicely with my anxiety.",
+        "The app is built in Electron.js, and remixes common UI patterns around notifications to make it more effective and less anxiety enducing."
+      ]
+    }, {
+      "title": "Request Inspector",
+      "url": "https://github.com/nebrius/request-inspector",
+      "description": [
+        "A prototype request timing diagnostic tool for Web and Node.js applications."
+      ]
+    }, {
+      "title": "CommaScript",
+      "url": "https://github.com/nebrius/commascript",
+      "description": [
+        "A statically typed, backwards compatible dialect of JavaScript.",
+        "An old experiment into how we could get static typing into JavaScript without new syntax. No longer under development."
+      ]
+    }, {
+      "title": "Dissertation",
+      "url": "https://github.com/nebrius/dissertation_project",
+      "description": [
+        "The source code for the firmware part of my dissertation project.",
+        "For my dissertation, I created an interconnect protocol based on SPI for creating clusters of DSPs to perform parallel computing using MPI"
+      ]
+    }
+  ]
 }
