@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 <meta charset="utf-8">
+<meta name="theme-color" content="#550080">
 <style>
 body {
   position: absolute;
@@ -20,6 +21,22 @@ a {
   color: black;
   text-decoration: none;
   border-bottom: 1px solid hsl(280, 100%, 25%);
+}
+
+/* Borrowed from https://haltersweb.github.io/Accessibility/svg.html */
+.screen-reader-text { /* Hide only visually, but have it available for screenreaders */
+  position: absolute !important;
+  display: block;
+  visibility: visible;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0px, 0px, 0px, 0px); /* deprecated */
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+  white-space: nowrap; /* wrap uses line feeds but LFs are not recognized as spaces by screen readers */
 }
 
 .menu {
