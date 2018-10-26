@@ -1,5 +1,28 @@
 {
-  "upcoming": [
+  "upcoming": [{
+      "title": "Effective Documentation for Open Source Projects",
+      "event": "NodeConf EU",
+      "location": "Kilkenny, Ireland",
+      "month": "November",
+      "year": 2018,
+      "abstract": [
+        "Documentation is critical in creating a successful open source project, yet it can be hard to know where to start.",
+        "How do you organize your docs? What sections do you need? How much detail should you add? What baseline knowledge can you assume your audience has? This talk will walk you through how and why to document a typical JavaScript module in npm for the browser or Node.js"
+      ],
+      "video": null,
+      "sessionLink": "https://www.nodeconf.eu/",
+      "links": [
+        {
+          "title": "Raspi Serial",
+          "url": "https://github.com/nebrius/raspi-serial",
+          "description": [
+            "This repo is a good example for how to create good documentation, and shows off a lot of different types of APIs. Much of this talk is based on this module."
+          ]
+        }
+      ]
+    }
+  ],
+  "conferences": [
     {
       "title": "Johnny-Five and the Rise of JavaScript Hardware",
       "event": "View Source Conference",
@@ -13,6 +36,7 @@
       ],
       "video": null,
       "sessionLink": "https://events.mozilla.org/viewsource2018",
+      "slideEmbed": "<iframe src=\"//www.slideshare.net/slideshow/embed_code/key/ykuLB541VDOraQ\" width=\"595\" height=\"485\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe>",
       "links": [
         {
           "title": "Johnny-Five",
@@ -44,30 +68,6 @@
         }
       ]
     }, {
-      "title": "Effective Documentation for Open Source Projects",
-      "event": "NodeConf EU",
-      "location": "Kilkenny, Ireland",
-      "month": "November",
-      "year": 2018,
-      "abstract": [
-        "Documentation is critical in creating a successful open source project, yet it can be hard to know where to start.",
-        "How do you organize your docs? What sections do you need? How much detail should you add? What baseline knowledge can you assume your audience has? This talk will walk you through how and why to document a typical JavaScript module in npm for the browser or Node.js"
-      ],
-      "video": null,
-      "sessionLink": "https://www.nodeconf.eu/",
-      "links": [
-        {
-          "title": "Raspi Serial",
-          "url": "https://github.com/nebrius/raspi-serial",
-          "description": [
-            "This repo is a good example for how to create good documentation, and shows off a lot of different types of APIs. Much of this talk is based on this module."
-          ]
-        }
-      ]
-    }
-  ],
-  "conferences": [
-    {
       "title": "Understanding Functions and \"this\" in the World of ES2018",
       "event": "Silicon Valley Code Camp",
       "location": "San Jose, California",
