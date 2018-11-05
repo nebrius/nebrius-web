@@ -13,10 +13,17 @@
       "sessionLink": "https://www.nodeconf.eu/",
       "links": [
         {
-          "title": "Raspi Serial",
-          "url": "https://github.com/nebrius/raspi-serial",
+          "title": "Raspi IO",
+          "url": "https://github.com/nebrius/raspi-IO",
           "description": [
-            "This repo is a good example for how to create good documentation, and shows off a lot of different types of APIs. Much of this talk is based on this module."
+            "This is the repository used for all of the examples in the talk and demonstrates many of the concepts discussed."
+          ]
+        },
+        {
+          "title": "Open Source Guide",
+          "url": "https://opensource.guide",
+          "description": [
+            "In this talk, I only discussed one of several types of documentation needed for a good open source project. GitHub has created a great guide to running an open source project where they talk about the many parts needed to run a successful open source project. Many of these parts are documentation oriented, from the technical documentation discussed in this talk, to other forms of documentation that are just as important."
           ]
         }
       ]
