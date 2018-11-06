@@ -142,7 +142,7 @@
         "Most software development follows some sort of agile process these days. Yet, some teams are more effective than others. Why is that? Agile is a tool like any other, and using it effectively requires understanding, skill, and experience.",
         "At the end of the day, software is written by people for people, and effective agile implementations embrace this fact. This talk will cover values and mindsets necessary to be effective at agile, guidelines, and how to put people first in your agile processes."
       ],
-      "video": null,
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/MdExAEEisoE\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
       "sessionLink": "https://jsi2018.sched.com/event/H0w1/effective-agile-processes-its-all-about-people-bryan-hughes-microsoft",
       "links": [
         {
@@ -166,7 +166,7 @@
       "location": "Carlsbad, California",
       "month": "August",
       "year": 2018,
-      "video": null
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/vkZHEvZz6EU\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
     }, {
       "title": "The Mental Health Impacts of Growing Up Queer",
       "event": "#causeascene Conference",
