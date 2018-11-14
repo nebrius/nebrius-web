@@ -1,5 +1,8 @@
 {
-  "upcoming": [{
+  "upcoming": [
+  ],
+  "conferences": [
+    {
       "title": "Effective Documentation for Open Source Projects",
       "event": "NodeConf EU",
       "location": "Kilkenny, Ireland",
@@ -28,9 +31,7 @@
           ]
         }
       ]
-    }
-  ],
-  "conferences": [
+    },
     {
       "title": "Johnny-Five and the Rise of JavaScript Hardware",
       "event": "View Source Conference",
