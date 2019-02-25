@@ -1,5 +1,44 @@
 {
   "upcoming": [
+    {
+      "title": "Effective Documentation for Open Source Projects",
+      "event": "Open Source 101",
+      "location": "Columbia, Source Carolina",
+      "month": "April",
+      "year": 2019
+    },
+    {
+      "title": "The Contentious Relationship Between the LGBTQ+ Community and Tech",
+      "event": "JSConf EU",
+      "location": "Berlin, Germany",
+      "month": "June",
+      "year": 2019,
+      "abstract": [
+        "\"Queers hate techies,\" the slogan proudly proclaimed in a window in San Francisco. Being a queer techie, I was immediately conflicted.",
+        "The tech industry provides a safe haven for many queer folks, myself included. It offers stable employement to us more willingly than other industries. These benefits don’t extend to all queer folks though, and these benefits are often revoked as soon as we step out of line. Queer folks are a model minority in an industry who’s products often negatively impact our community.",
+        "This talk will dive into these complications and how we can improve the tech industry to make it a truly welcoming place for queer folks."
+      ],
+      "sessionLink": "https://2019.jsconf.eu/bryan-hughes/the-contentious-relationship-between-the-lgbtq-community-and-tech.html"
+    },
+    {
+      "title": "Converting Production Code to TypeScript: A Case Study, with Robots!",
+      "event": "Revolution Conf",
+      "location": "Virginia Beach, Virginia",
+      "month": "June",
+      "year": 2019,
+      "abstract": [
+        "TypeScript offers all sorts of benefits to JavaScript projects, and more folks are starting new projects with it every day. Starting a new project is straightforward, but how do you go about converting an existing in-production project effectively?",
+        "In this talk, I'll walk you through how I converted an established open source robotics library to TypeScript. We'll cover protecting against regressions, sharing TypeScript type definitions between multiple repositories and modules, architectural best practices, and how TypeScript almost always ends up uncovering bugs you didn't know existed."
+      ],
+      "sessionLink": "https://2019.revolutionconf.com/#bryan_hughes"
+    },
+    {
+      "title": "React + Redux + TypeScript Best Practices",
+      "event": "ReactJS San Francisco Bay Area meetup",
+      "location": "San Francisco, California",
+      "month": "June",
+      "year": 2019
+    }
   ],
   "conferences": [
     {
