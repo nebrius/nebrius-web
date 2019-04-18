@@ -1,13 +1,6 @@
 {
   "upcoming": [
     {
-      "title": "Effective Documentation for Open Source Projects",
-      "event": "Open Source 101",
-      "location": "Columbia, Source Carolina",
-      "month": "April",
-      "year": 2019
-    },
-    {
       "title": "The Contentious Relationship Between the LGBTQ+ Community and Tech",
       "event": "JSConf EU",
       "location": "Berlin, Germany",
@@ -41,6 +34,35 @@
     }
   ],
   "conferences": [
+    {
+      "title": "Effective Documentation for Open Source Projects",
+      "event": "Open Source 101",
+      "location": "Columbia, Source Carolina",
+      "month": "April",
+      "year": 2019,
+      "abstract": [
+        "Documentation is critical in creating a successful open source project, yet it can be hard to know where to start. How do you organize your docs? What sections do you need? How much detail should you add? What baseline knowledge can you assume your audience has?",
+        "This talk will walk you through how and why to document a typical JavaScript module in npm for the browser or Node.js."
+      ],
+      "sessionLink": "https://opensource101.com/effective-documentation-for-open-source-projects/",
+      "slideEmbed": "<iframe src=\"//www.slideshare.net/slideshow/embed_code/key/Atum6sZHoOsMRe\" width=\"595\" height=\"485\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe>",
+      "links": [
+        {
+          "title": "Raspi IO",
+          "url": "https://github.com/nebrius/raspi-IO",
+          "description": [
+            "This is the repository used for all of the examples in the talk and demonstrates many of the concepts discussed."
+          ]
+        },
+        {
+          "title": "Open Source Guide",
+          "url": "https://opensource.guide",
+          "description": [
+            "In this talk, I only discussed one of several types of documentation needed for a good open source project. GitHub has created a great guide to running an open source project where they talk about the many parts needed to run a successful open source project. Many of these parts are documentation oriented, from the technical documentation discussed in this talk, to other forms of documentation that are just as important."
+          ]
+        }
+      ]
+    },
     {
       "title": "Effective Documentation for Open Source Projects",
       "event": "NodeConf EU",
