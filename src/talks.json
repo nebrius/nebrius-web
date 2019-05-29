@@ -1,6 +1,15 @@
 {
   "upcoming": [
     {
+      "title": "React + Redux + TypeScript Best Practices",
+      "event": "ReactJS San Francisco Bay Area meetup",
+      "location": "San Francisco, California",
+      "month": "June",
+      "year": 2019
+    }
+  ],
+  "conferences": [
+    {
       "title": "The Contentious Relationship Between the LGBTQ+ Community and Tech",
       "event": "JSConf EU",
       "location": "Berlin, Germany",
@@ -13,27 +22,6 @@
       ],
       "sessionLink": "https://2019.jsconf.eu/bryan-hughes/the-contentious-relationship-between-the-lgbtq-community-and-tech.html"
     },
-    {
-      "title": "Converting Production Code to TypeScript: A Case Study, with Robots!",
-      "event": "Revolution Conf",
-      "location": "Virginia Beach, Virginia",
-      "month": "June",
-      "year": 2019,
-      "abstract": [
-        "TypeScript offers all sorts of benefits to JavaScript projects, and more folks are starting new projects with it every day. Starting a new project is straightforward, but how do you go about converting an existing in-production project effectively?",
-        "In this talk, I'll walk you through how I converted an established open source robotics library to TypeScript. We'll cover protecting against regressions, sharing TypeScript type definitions between multiple repositories and modules, architectural best practices, and how TypeScript almost always ends up uncovering bugs you didn't know existed."
-      ],
-      "sessionLink": "https://2019.revolutionconf.com/#bryan_hughes"
-    },
-    {
-      "title": "React + Redux + TypeScript Best Practices",
-      "event": "ReactJS San Francisco Bay Area meetup",
-      "location": "San Francisco, California",
-      "month": "June",
-      "year": 2019
-    }
-  ],
-  "conferences": [
     {
       "title": "Effective Documentation for Open Source Projects",
       "event": "Open Source 101",
@@ -503,6 +491,49 @@
     }
   ],
   "meetups": [
+    {
+      "title": "The Node.js Event Loop: Not So Single Threaded",
+      "event": "Berlin.js",
+      "location": "Berlin, Germany",
+      "month": "May",
+      "year": 2019,
+      "abstract": [
+        "You've probably heard, and possibly lamented, that Node.js is single threaded. It's true that all JavaScript executed by Node.js is run in a single thread. This means each JavScript file you write, module you require, and even Node.js itself, all contend for processing time.",
+        "But JavaScript isn't the only code in Node.js. There's also a lot of C++, most important of which is the event loop. One of the event loops responsibilities is to manage a set of threads called the thread pool. As it turns out, most C++ code in Node.js is multithreaded!",
+        "Come learn how the event loop works in detail, how it affects the performance of your app, and how you can use this knowledge to your advantage!"
+      ],
+      "links": [
+        {
+          "title": "libuv",
+          "link": "https://github.com/libuv/libuv",
+          "description": [
+            "This is the GitHub repo for Node.js' event loop itself."
+          ]
+        },
+        {
+          "title": "Node's Event Loop From the Inside Out",
+          "url": "https://youtu.be/P9csgxBgaZ8",
+          "description": [
+            "A great talk on the event loop by Sam Roberts at IBM and Node.js core collaborator"
+          ]
+        },
+        {
+          "title": "All you need to know to really understand the Node.js Event Loop and its Metrics",
+          "url": "http://disq.us/t/2r8ohjh",
+          "description": [
+            "A good blog post based on the above talks by Daniel Khan"
+          ]
+        },
+        {
+          "title": "Everything You Need to Know About the Node.js Event Loop",
+          "url": "https://youtu.be/PNa9OMajw9w",
+          "description": [
+            "Another great talk on the event loop, this time by libuv core collaborator Bert Belder"
+          ]
+        }
+      ],
+      "video": null
+    },
     {
       "title": "Effective Documentation for Open Source Projects",
       "event": "SFNode",

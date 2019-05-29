@@ -291,17 +291,17 @@ a {
 
 }
 </style>
-<title>&quot;Converting Production Code to TypeScript: A Case Study, with Robots!&quot; at Revolution Conf</title>
+<title>&quot;The Node.js Event Loop: Not So Single Threaded&quot; at Berlin.js</title>
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:title" content="&quot;Converting Production Code to TypeScript: A Case Study, with Robots!&quot; at Revolution Conf" />
+<meta property="og:title" content="&quot;The Node.js Event Loop: Not So Single Threaded&quot; at Berlin.js" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://nebri.us/static/me-small.jpg" />
-<meta property="og:url" content="https://nebri.us/talk/revolution-conf-2019-converting-production-code-to-typescript-a-case-study-with-robots.html" />
-<meta property="og:description" content="You can find details for my talk titled Converting Production Code to TypeScript: A Case Study, with Robots! that I gave at Revolution Conf in June, 2019" />
+<meta property="og:url" content="https://nebri.us/talk/berlin.js-2019-the-node.js-event-loop-not-so-single-threaded.html" />
+<meta property="og:description" content="You can find details for my talk titled The Node.js Event Loop: Not So Single Threaded that I gave at Berlin.js in May, 2019" />
 <link rel="shortcut icon" href="favicon.png">
 <meta name="theme-color" content="#550080">
-<meta name="Description" content="You can find details for my talk titled Converting Production Code to TypeScript: A Case Study, with Robots! that I gave at Revolution Conf in June, 2019">
+<meta name="Description" content="You can find details for my talk titled The Node.js Event Loop: Not So Single Threaded that I gave at Berlin.js in May, 2019">
 </head>
 
 <body>
@@ -316,19 +316,47 @@ a {
 </nav>
 
 <section class="content">
-  <h2>"Converting Production Code to TypeScript: A Case Study, with Robots!"</h2>
-  <div class="talk-page-event"><a href="https://2019.revolutionconf.com/#bryan_hughes">Revolution Conf.</a></div>
-  <div class="talk-page-event-location">Virginia Beach, Virginia.</div>
-  <div class="talk-page-event-date">June 2019.</div>
+  <h2>"The Node.js Event Loop: Not So Single Threaded"</h2>
+  <div class="talk-page-event">Berlin.js.</div>
+  <div class="talk-page-event-location">Berlin, Germany.</div>
+  <div class="talk-page-event-date">May 2019.</div>
 
   <div>
     <h4>Abstract</h4>
-      <p>TypeScript offers all sorts of benefits to JavaScript projects, and more folks are starting new projects with it every day. Starting a new project is straightforward, but how do you go about converting an existing in-production project effectively?</p>
-      <p>In this talk, I&#x27;ll walk you through how I converted an established open source robotics library to TypeScript. We&#x27;ll cover protecting against regressions, sharing TypeScript type definitions between multiple repositories and modules, architectural best practices, and how TypeScript almost always ends up uncovering bugs you didn&#x27;t know existed.</p>
+      <p>You&#x27;ve probably heard, and possibly lamented, that Node.js is single threaded. It&#x27;s true that all JavaScript executed by Node.js is run in a single thread. This means each JavScript file you write, module you require, and even Node.js itself, all contend for processing time.</p>
+      <p>But JavaScript isn&#x27;t the only code in Node.js. There&#x27;s also a lot of C++, most important of which is the event loop. One of the event loops responsibilities is to manage a set of threads called the thread pool. As it turns out, most C++ code in Node.js is multithreaded!</p>
+      <p>Come learn how the event loop works in detail, how it affects the performance of your app, and how you can use this knowledge to your advantage!</p>
   </div>
 
 
 
+  <div>
+    <h4>Useful Links</h4>
+    <div>
+      <div class="talk-page-link-anchor"><a href="">libuv</a></div>
+      <div class="talk-page-link-description">
+        <p>This is the GitHub repo for Node.js&#x27; event loop itself.</p>
+      </div>
+    </div>
+    <div>
+      <div class="talk-page-link-anchor"><a href="https://youtu.be/P9csgxBgaZ8">Node&#x27;s Event Loop From the Inside Out</a></div>
+      <div class="talk-page-link-description">
+        <p>A great talk on the event loop by Sam Roberts at IBM and Node.js core collaborator</p>
+      </div>
+    </div>
+    <div>
+      <div class="talk-page-link-anchor"><a href="http://disq.us/t/2r8ohjh">All you need to know to really understand the Node.js Event Loop and its Metrics</a></div>
+      <div class="talk-page-link-description">
+        <p>A good blog post based on the above talks by Daniel Khan</p>
+      </div>
+    </div>
+    <div>
+      <div class="talk-page-link-anchor"><a href="https://youtu.be/PNa9OMajw9w">Everything You Need to Know About the Node.js Event Loop</a></div>
+      <div class="talk-page-link-description">
+        <p>Another great talk on the event loop, this time by libuv core collaborator Bert Belder</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!--
