@@ -22,7 +22,7 @@ const cpy = require('cpy');
 const rimraf = require('rimraf');
 
 const SRC_DIR = path.join(__dirname, 'src');
-const DEST_DIR = path.join(__dirname, 'dist');
+const DEST_DIR = path.join(__dirname, 'docs');
 
 rimraf.sync(`${DEST_DIR}/**/*`);
 
