@@ -505,6 +505,30 @@
   ],
   "meetups": [
     {
+      "title": "HSV, Color Spaces, and You",
+      "event": "WaffleJS",
+      "location": "San Francisco, California",
+      "year": 2019,
+      "sessionLink": "https://wafflejs.com/?day=2019-06-12",
+      "links": [
+        {
+          "title": "The HSV Color Model in Graphic Design",
+          "url": "https://www.lifewire.com/what-is-hsv-in-design-1078068",
+          "description": [
+            "This article contains a good description of the HSV color space"
+          ]
+        },
+        {
+          "title": "Raver Lights",
+          "url": "https://github.com/nebrius/raver-lights",
+          "description": [
+            "This is the firmware and board schematics that power the LED art thing I demo'd at the end, and uses the HSV color space for the core animation engine."
+          ]
+        }
+      ],
+      "video": null
+    },
+    {
       "title": "The Node.js Event Loop: Not So Single Threaded",
       "event": "Berlin.js",
       "location": "Berlin, Germany",
