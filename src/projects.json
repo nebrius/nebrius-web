@@ -16,10 +16,10 @@
       ]
     }, {
       "title": "Aquarium Control",
-      "url": "",
+      "url": "https://github.com/nebrius/aquarium-control",
       "description": [
-        "An Azure-based system for controlling the lights and monitoring temperature in my Aquarium with a Raspberry Pi.",
-        "This system has a web UI for controlling the lighting, all backed by a Node.js Web App Service and Azure SQL instance in the cloud."
+        "A system for controlling the lights, monitoring temperature, and logging cleaning and water testing in my aquarium with a Raspberry Pi.",
+        "This system has a React.js web UI for controlling the lighting, backed by Node.js on the Raspberry Pi."
       ]
     }, {
       "title": "Contact Scheduler",
