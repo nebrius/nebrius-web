@@ -33,7 +33,8 @@
         "The tech industry provides a safe haven for many queer folks, myself included. It offers stable employement to us more willingly than other industries. These benefits don’t extend to all queer folks though, and these benefits are often revoked as soon as we step out of line. Queer folks are a model minority in an industry who’s products often negatively impact our community.",
         "This talk will dive into these complications and how we can improve the tech industry to make it a truly welcoming place for queer folks."
       ],
-      "sessionLink": "https://2019.jsconf.eu/bryan-hughes/the-contentious-relationship-between-the-lgbtq-community-and-tech.html"
+      "sessionLink": "https://2019.jsconf.eu/bryan-hughes/the-contentious-relationship-between-the-lgbtq-community-and-tech.html",
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/fSN3LVbXTkg\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
     },
     {
       "title": "Effective Documentation for Open Source Projects",
