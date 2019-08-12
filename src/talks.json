@@ -43,6 +43,18 @@
           "description": [
             "This repository contains the library I used in the Arduino code example for communicating with the LED strips."
           ]
+        }, {
+          "title": "RPrez",
+          "url": "https://github.com/nebrius/rprez",
+          "description": [
+            "This repository contains the presentation software I created for this talk (and others). Warning: poorly documented."
+          ]
+        }, {
+          "title": "Slide Deck",
+          "url": "https://github.com/nebrius/conference-slides/tree/master/JSConf%20US%202019",
+          "description": [
+            "This repository contains the slide-deck for this presentation, for use in RPrez."
+          ]
         }
       ]
     },
