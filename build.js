@@ -35,6 +35,8 @@ const talkData = require(path.join(SRC_DIR, 'talks.json'));
 const photoData = require(path.join(SRC_DIR, 'photos.json'));
 const projectsData = require(path.join(SRC_DIR, 'projects.json'));
 
+let numTalks = 0;
+
 compileFile('index');
 fs.mkdirSync(path.join(DEST_DIR, 'talk'));
 for (const category in talkData) {
@@ -46,9 +48,11 @@ for (const category in talkData) {
 compileFile('talks', talkData);
 compileFile('photography', photoData);
 compileFile('projects', projectsData);
+console.log(`Compiled ${numTalks} talks.`);
 
 cpy(path.join(__dirname, 'assets/**/*'), DEST_DIR);
 cpy(path.join(__dirname, 'static/**/*'), path.join(DEST_DIR, 'static'));
+console.log('Done.');
 
 function getSlug(data) {
   const slug = `${data.event}-${data.year}-${data.title}.html`.toLowerCase().replace(/\s/g, '-');
@@ -78,6 +82,7 @@ function compileFile(name, data) {
 }
 
 function compileTalkFile(data) {
+  numTalks++;
   const template = handlebars.compile(fs.readFileSync(path.join(SRC_DIR, `talk-landing-page.handlebars`), 'utf-8'));
   data.embed = {
     path: `/talk/${data.slug}`,
