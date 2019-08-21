@@ -1,6 +1,15 @@
 {
   "upcoming": [
     {
+      "title": "React + Redux + TypeScript Best Practices",
+      "event": "ReactJS San Francisco Bay Area meetup",
+      "location": "San Francisco, California",
+      "month": "September",
+      "year": 2019
+    }
+  ],
+  "conferences": [
+    {
       "title": "Creating Beautiful LED Art with JavaScript",
       "event": "JSConf US",
       "location": "Carlsbad, California",
@@ -58,15 +67,6 @@
         }
       ]
     },
-    {
-      "title": "React + Redux + TypeScript Best Practices",
-      "event": "ReactJS San Francisco Bay Area meetup",
-      "location": "San Francisco, California",
-      "month": "September",
-      "year": 2019
-    }
-  ],
-  "conferences": [
     {
       "title": "The Contentious Relationship Between the LGBTQ+ Community and Tech",
       "event": "JSConf EU",
