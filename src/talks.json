@@ -21,6 +21,7 @@
         "This talk will dive into the theory and practice of using different color spaces combined with some clever math to create beautiful LED animations for your JavaScript-powered art piece."
       ],
       "sessionLink": "https://2019.jsconf.us/speakers/bryan-hughes",
+      "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/GqsdiMc49yM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
       "links": [
         {
           "title": "Raver Lights",
