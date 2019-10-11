@@ -1,11 +1,17 @@
 {
   "upcoming": [
     {
-      "title": "React + Redux + TypeScript Best Practices",
-      "event": "ReactJS San Francisco Bay Area meetup",
-      "location": "San Francisco, California",
-      "month": "September",
-      "year": 2019
+      "title": "Finding Your Inner Artist",
+      "event": "JSConf Colombia",
+      "location": "Medellín, Colombia",
+      "month": "October",
+      "year": 2019,
+      "abstract": [
+        "Art is important; it's the culmination of everything good about our species. As Tolstoy said, \" Art is a microscope which the artist fixes on the secrets of his soul, and shows to people these secrets which are common to all.\"",
+        "Creating art is different than building a product. The tools can be similar, but the motivation is different. With art, we're trying to further our understanding of ourselves and what it means to be human. It makes us better people.",
+        "You don't have to go to years of art school to become an artist, I certainly didn't. You can do it, and you should. Learn how to find your inner artist and express yourself."
+      ],
+      "sessionLink": "http://jsconf.co/schedule_day2/#schedule"
     }
   ],
   "conferences": [
@@ -551,6 +557,13 @@
     }
   ],
   "meetups": [
+    {
+      "title": "React + Redux + TypeScript Best Practices",
+      "event": "ReactJS San Francisco Bay Area meetup",
+      "location": "San Francisco, California",
+      "month": "September",
+      "year": 2019
+    },
     {
       "title": "HSV, Color Spaces, and You",
       "event": "WaffleJS",
