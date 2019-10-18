@@ -1,7 +1,9 @@
 {
   "upcoming": [
+  ],
+  "conferences": [
     {
-      "title": "Finding Your Inner Artist",
+      "title": "Finding Your Inner Artist: An Artist's Journey",
       "event": "JSConf Colombia",
       "location": "Medellín, Colombia",
       "month": "October",
@@ -11,10 +13,55 @@
         "Creating art is different than building a product. The tools can be similar, but the motivation is different. With art, we're trying to further our understanding of ourselves and what it means to be human. It makes us better people.",
         "You don't have to go to years of art school to become an artist, I certainly didn't. You can do it, and you should. Learn how to find your inner artist and express yourself."
       ],
-      "sessionLink": "http://jsconf.co/schedule_day2/#schedule"
-    }
-  ],
-  "conferences": [
+      "sessionLink": "http://jsconf.co/schedule_day2/#schedule",
+      "links": [
+        {
+          "title": "\"Pure CSS Pink,\" by Diana Smith",
+          "url": "https://diana-adrianne.com/purecss-pink/",
+          "description": [
+            ""
+          ]
+        }, {
+          "title": "\"Privacy Policy,\" by Brian Singer",
+          "url": "https://dwebcamp2019.sched.com/artist/someguy1",
+          "description": [
+            ""
+          ]
+        }, {
+          "title": "\"Megaliths in the Bath House Ruins,\" by teamLab",
+          "url": "https://www.teamlab.art/w/megaliths_bathhouse/",
+          "description": [
+            ""
+          ]
+        }, {
+          "title": "Selected Photography",
+          "url": "https://nebri.us/photography.html",
+          "description": [
+            "Here you can find a selection of photos, including many of the photos I included in my talk."
+          ]
+        }, {
+          "title": "Building the Temple",
+          "url": "https://burningman.org/event/art-performance/playa-art/building-the-temple/",
+          "description": [
+            "This is a good article describing what the Temple at Burning Man is, the Temple's history, and how it's built."
+          ]
+        }, {
+          "title": "Raver Lights",
+          "url": "https://github.com/nebrius/raver-lights",
+          "description": [
+            "Raver Lights is an LED synchroniation system composed of hardware and software I developed to create LED art.",
+            "I used this system to create the lighting for the Black Rock Public Library Deep Playa Branch art piece shown in the talk."
+          ]
+        }, {
+          "title": "Home Lights",
+          "url": "https://github.com/nebrius/home-lights",
+          "description": [
+            "Home Lights is a system I created based on Raver Lights to control the lighting in my apartment.",
+            "Home Lights runs on a Raspberry Pi and creates a web server with a custom UI to control the lights."
+          ]
+        }
+      ]
+    },
     {
       "title": "Creating Beautiful LED Art with JavaScript",
       "event": "JSConf US",
