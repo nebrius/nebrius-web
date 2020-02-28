@@ -8,11 +8,18 @@
         "Raspi IO is built on Raspi.js, which I wrote to make it easier to work with hardware on the Raspberry Pi in a consistent way across disparate peripherals."
       ]
     }, {
-      "title": "Raver Lights",
-      "url": "https://github.com/nebrius/raver-lights",
+      "title": "RVL",
+      "url": "https://github.com/rvl-system",
       "description": [
         "A wirelessly distributed lighting control system for programmable LED art.",
-        "For this project, I created a pair of custom boards based on the ESP8266 that controls WS2812b 5V LED. A board in \"control\" mode syncs patterns to all boards in \"receive\" mode, with millisecond accuracy."
+        "I created a pair of custom boards based on the ESP32 that controls 5V LED. A board in \"control\" mode syncs patterns to all boards in \"receive\" mode, with millisecond accuracy."
+      ]
+    }, {
+      "title": "Reduxology",
+      "url": "https://github.com/nebrius/reduxology",
+      "description": [
+        "A library that makes it easier to manage boilerplate and reason about React Redux applications",
+        "I created this library after watching folks struggle to learn Redux. In my experience, this struggle usually comes from the Redux API obscuring the Redux concepts with unecessary boilerplate."
       ]
     }, {
       "title": "Aquarium Control",
