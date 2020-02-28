@@ -3,6 +3,14 @@
   ],
   "conferences": [
     {
+      "title": "Master of Ceremonies",
+      "event": "NodeConf EU",
+      "location": "Kilkenny, Ireland",
+      "month": "November",
+      "year": 2019,
+      "video": null
+    },
+    {
       "title": "Finding Your Inner Artist: An Artist's Journey",
       "event": "JSConf Colombia",
       "location": "Medellín, Colombia",

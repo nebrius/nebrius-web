@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/nebrius/nebrius.github.io#readme",
   "dependencies": {
-    "cpy": "^7.3.0",
-    "handlebars": "^4.1.2",
-    "rimraf": "^2.6.3"
+    "cpy": "^8.0.1",
+    "handlebars": "^4.7.3",
+    "rimraf": "^3.0.2"
   }
 }
