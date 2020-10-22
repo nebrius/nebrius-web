@@ -1,18 +1,19 @@
 {
   "projects": [
     {
+      "title": "RVL",
+      "url": "https://github.com/rvl-system",
+      "description": [
+        "A wirelessly distributed lighting control system for programmable LED art.",
+        "RVL is an ecosystem of hardware and software I desgined for building LED art pieces and fun home lighting. Here's a video of an art piece I designed with it at Burning Man 2019"
+      ],
+      "videoEmbed": "<iframe width=\"960\" height=\"540\" src=\"https://www.youtube.com/embed/HZNM6n1g5n8\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    }, {
       "title": "Raspi IO",
       "url": "https://github.com/nebrius/raspi-io",
       "description": [
         "Raspi IO is a Firmata API compatible library for Raspbian running on the Raspberry Pi that can be used as an I/O plugin with Johnny-Five.",
         "Raspi IO is built on Raspi.js, which I wrote to make it easier to work with hardware on the Raspberry Pi in a consistent way across disparate peripherals."
-      ]
-    }, {
-      "title": "RVL",
-      "url": "https://github.com/rvl-system",
-      "description": [
-        "A wirelessly distributed lighting control system for programmable LED art.",
-        "I created a pair of custom boards based on the ESP32 that controls 5V LED. A board in \"control\" mode syncs patterns to all boards in \"receive\" mode, with millisecond accuracy."
       ]
     }, {
       "title": "Reduxology",
