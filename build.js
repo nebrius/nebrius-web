@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /*
 Copyright (C) 2017 Bryan Hughes <bryan@nebri.us>
 
@@ -76,9 +77,12 @@ function getTemplate(name) {
   return handlebars.compile(fs.readFileSync(path.join(SRC_DIR, `${name}.handlebars`), 'utf-8'));
 }
 
-function compileFile(name, data) {
+function compileFile(name, data = {}) {
   const template = getTemplate(name);
-  fs.writeFileSync(path.join(DEST_DIR, `${name}.html`), template(data));
+  fs.writeFileSync(
+    path.join(DEST_DIR, `${name}.html`),
+    template({...data, currentYear: new Date().getFullYear()})
+  );
 }
 
 function compileTalkFile(data) {
@@ -89,5 +93,8 @@ function compileTalkFile(data) {
     title: `"${data.title}" at ${data.event}`,
     description: `You can find details for my talk titled ${data.title} that I gave at ${data.event} in ${data.month}, ${data.year}`
   };
-  fs.writeFileSync(path.join(DEST_DIR, 'talk', data.slug), template(data));
+  fs.writeFileSync(
+    path.join(DEST_DIR, 'talk', data.slug),
+    template({...data, currentYear: new Date().getFullYear()})
+  );
 }
