@@ -1,5 +1,31 @@
 {
   "upcoming": [
+    {
+      "title": "To Rewrite, or Not to Rewrite, That Is the Question",
+      "event": "OpenJS World",
+      "location": "Vancouver, BC, Canada",
+      "month": "May",
+      "year": 2023,
+      "abstract": [
+        "We all know those OSS codebases; old, brittle, and getting in the way of adding new features and onboarding new collaborators. \"I know!\" you think, \"Let's rewrite this using shiny new tech! It'll solve all our problems!\"",
+        "Whoa there. Sometimes rewriting is the best option, and sometimes it's not. Even when it is, successfully rewriting a codebase is quite difficult in practice.",
+        "Based on personal experience, this talk will walk you through the planning and implementation process to actually finish that long-desired rewrite."
+      ],
+      "sessionLink": "https://ossna2023.sched.com/event/1LXpk/to-rewrite-or-not-to-rewrite-that-is-the-question-bryan-hughes-patreon"
+    },
+    {
+      "title": "What We Owe to Each Other",
+      "event": "JSNation",
+      "location": "Amsterdam, Netherlands/Remote",
+      "month": "June",
+      "year": 2023,
+      "abstract": [
+        "Open source has won, and it's the center of gravity for our community. Whether we're contributors to open source projects, commercial product engineers, companies, developer advocates, or something else, we're all a part of this community. And we owe it to each other, and to ourselves, to leave the community better than we found it.",
+        "But how do we do that? What responsibilities do companies have to the community? Or developer advocates? Or OSS contributors? How are we failing those responsibilities, and how can we do better?",
+        "In short, what do we owe to each other? Let's find out."
+      ],
+      "sessionLink": "https://jsnation.com/#speakers"
+    }
   ],
   "conferences": [
     {
