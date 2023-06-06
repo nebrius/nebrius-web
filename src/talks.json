@@ -1,5 +1,8 @@
 {
   "upcoming": [
+  ],
+  "conferences": [
+
     {
       "title": "To Rewrite, or Not to Rewrite, That Is the Question",
       "event": "OpenJS World",
@@ -25,9 +28,7 @@
         "In short, what do we owe to each other? Let's find out."
       ],
       "sessionLink": "https://jsnation.com/#speakers"
-    }
-  ],
-  "conferences": [
+    },
     {
       "title": "Master of Ceremonies",
       "event": "NodeConf EU",
