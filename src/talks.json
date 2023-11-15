@@ -3,6 +3,19 @@
   ],
   "conferences": [
     {
+      "title": "Taming the State Management Dragon",
+      "event": "React Summit US",
+      "location": "New York, New York/Remote",
+      "month": "November",
+      "year": 2023,
+      "abstract": [
+        "We spend a lot of time discussing which state library we should use, and fair. There are quite a few, from the common one everyone uses and loves to hate on, to that one quirky alternative, to several up and comers. However, discussing which library is best puts the cart before the horse.",
+        "When figuring out how to handle state, we should first ask ourselves: what different categories of state do we need? What are the constraints of each category? How do they relate to each other? How do they relate to the outside world? How do we keep them from becoming a giant, brittle ball of yarn? And more.",
+        "This might sound overwhelming, but never fear! In this talk, I'll walk you through how to answer these questions, and how craft an approachable, maintainable, and scalable state system. And yes, I will talk about how to pick a state management library too."
+      ],
+      "sessionLink": "https://reactsummit.us/#speakers"
+    },
+    {
       "title": "What We Owe to Each Other",
       "event": "JSNation",
       "location": "Amsterdam, Netherlands/Remote",
