@@ -13,7 +13,44 @@
         "When figuring out how to handle state, we should first ask ourselves: what different categories of state do we need? What are the constraints of each category? How do they relate to each other? How do they relate to the outside world? How do we keep them from becoming a giant, brittle ball of yarn? And more.",
         "This might sound overwhelming, but never fear! In this talk, I'll walk you through how to answer these questions, and how craft an approachable, maintainable, and scalable state system. And yes, I will talk about how to pick a state management library too."
       ],
-      "sessionLink": "https://reactsummit.us/#speakers"
+      "sessionLink": "https://reactsummit.us/#speakers",
+      "links": [
+        {
+          "title": "Redux",
+          "url": "https://redux.js.org/",
+          "description": [
+            "One of the five state management libraries mentioned in the talk"
+          ]
+        },
+        {
+          "title": "Zustand",
+          "url": "https://zustand-demo.pmnd.rs/",
+          "description": [
+            "One of the five state management libraries mentioned in the talk"
+          ]
+        },
+        {
+          "title": "Recoil",
+          "url": "https://recoiljs.org/",
+          "description": [
+            "One of the five state management libraries mentioned in the talk"
+          ]
+        },
+        {
+          "title": "Jotai",
+          "url": "https://jotai.org/",
+          "description": [
+            "One of the five state management libraries mentioned in the talk"
+          ]
+        },
+        {
+          "title": "React Strapped",
+          "url": "https://github.com/nebrius/react-strapped",
+          "description": [
+            "One of the five state management libraries mentioned in the talk"
+          ]
+        }
+      ]
     },
     {
       "title": "What We Owe to Each Other",
