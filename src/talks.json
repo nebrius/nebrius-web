@@ -13,7 +13,7 @@
         "When figuring out how to handle state, we should first ask ourselves: what different categories of state do we need? What are the constraints of each category? How do they relate to each other? How do they relate to the outside world? How do we keep them from becoming a giant, brittle ball of yarn? And more.",
         "This might sound overwhelming, but never fear! In this talk, I'll walk you through how to answer these questions, and how craft an approachable, maintainable, and scalable state system. And yes, I will talk about how to pick a state management library too."
       ],
-      "sessionLink": "https://www.notion.so/patreonhq/Sane-and-discoverable-bootstrap-data-access-1996d9d65934458e963b5293d8b0a1b4?pvs=4#a3ee38ec367c476194261f1806347479",
+      "sessionLink": "https://portal.gitnation.org/contents/taming-the-state-management-dragon",
       "links": [
         {
           "title": "Redux",
@@ -50,7 +50,8 @@
             "One of the five state management libraries mentioned in the talk"
           ]
         }
-      ]
+      ],
+      "video": "https://portal.gitnation.org/contents/taming-the-state-management-dragon"
     },
     {
       "title": "What We Owe to Each Other",
@@ -63,7 +64,8 @@
         "But how do we do that? What responsibilities do companies have to the community? Or developer advocates? Or OSS contributors? How are we failing those responsibilities, and how can we do better?",
         "In short, what do we owe to each other? Let's find out."
       ],
-      "sessionLink": "https://portal.gitnation.org/contents/what-we-owe-to-each-other"
+      "sessionLink": "https://portal.gitnation.org/contents/what-we-owe-to-each-other",
+      "video": "https://portal.gitnation.org/contents/what-we-owe-to-each-other"
     },
     {
       "title": "To Rewrite, or Not to Rewrite, That Is the Question",

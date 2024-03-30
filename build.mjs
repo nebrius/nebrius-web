@@ -16,30 +16,37 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-const path = require('path');
-const fs = require('fs');
-const handlebars = require('handlebars');
-const cpy = require('cpy');
-const rimraf = require('rimraf');
+import { join } from 'node:path';
+import { mkdirSync, readFileSync, writeFileSync, rmSync } from 'node:fs';
+import { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import handlebars from 'handlebars';
+import cpy from 'cpy';
 
-const SRC_DIR = path.join(__dirname, 'src');
-const DEST_DIR = path.join(__dirname, 'docs');
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
-rimraf.sync(`${DEST_DIR}/**/*`);
+const SRC_DIR = join(__dirname, 'src');
+const DEST_DIR = join(__dirname, 'docs');
+
+rmSync(DEST_DIR, {
+  recursive: true,
+  force: true
+});
+mkdirSync(join(DEST_DIR));
 
 handlebars.registerPartial({
   header: getTemplate('header'),
   footer: getTemplate('footer')
 });
 
-const talkData = require(path.join(SRC_DIR, 'talks.json'));
-const photoData = require(path.join(SRC_DIR, 'photos.json'));
-const projectsData = require(path.join(SRC_DIR, 'projects.json'));
+const talkData = JSON.parse(readFileSync(join(SRC_DIR, 'talks.json'), 'utf-8'));
+const photoData = JSON.parse(readFileSync(join(SRC_DIR, 'photos.json'), 'utf-8'));
+const projectsData = JSON.parse(readFileSync(join(SRC_DIR, 'projects.json'), 'utf-8'));
 
 let numTalks = 0;
 
 compileFile('index');
-fs.mkdirSync(path.join(DEST_DIR, 'talk'));
+mkdirSync(join(DEST_DIR, 'talk'));
 for (const category in talkData) {
   for (const talk of talkData[category]) {
     talk.slug = getSlug(talk);
@@ -51,8 +58,8 @@ compileFile('photography', photoData);
 compileFile('projects', projectsData);
 console.log(`Compiled ${numTalks} talks.`);
 
-cpy(path.join(__dirname, 'assets/**/*'), DEST_DIR);
-cpy(path.join(__dirname, 'static/**/*'), path.join(DEST_DIR, 'static'));
+cpy(join(__dirname, 'assets/**/*'), DEST_DIR);
+cpy(join(__dirname, 'static/**/*'), join(DEST_DIR, 'static'));
 console.log('Done.');
 
 function getSlug(data) {
@@ -74,27 +81,27 @@ function getSlug(data) {
 }
 
 function getTemplate(name) {
-  return handlebars.compile(fs.readFileSync(path.join(SRC_DIR, `${name}.handlebars`), 'utf-8'));
+  return handlebars.compile(readFileSync(join(SRC_DIR, `${name}.handlebars`), 'utf-8'));
 }
 
 function compileFile(name, data = {}) {
   const template = getTemplate(name);
-  fs.writeFileSync(
-    path.join(DEST_DIR, `${name}.html`),
-    template({...data, currentYear: new Date().getFullYear()})
+  writeFileSync(
+    join(DEST_DIR, `${name}.html`),
+    template({ ...data, currentYear: new Date().getFullYear() })
   );
 }
 
 function compileTalkFile(data) {
   numTalks++;
-  const template = handlebars.compile(fs.readFileSync(path.join(SRC_DIR, `talk-landing-page.handlebars`), 'utf-8'));
+  const template = handlebars.compile(readFileSync(join(SRC_DIR, `talk-landing-page.handlebars`), 'utf-8'));
   data.embed = {
     path: `/talk/${data.slug}`,
     title: `"${data.title}" at ${data.event}`,
     description: `You can find details for my talk titled ${data.title} that I gave at ${data.event} in ${data.month}, ${data.year}`
   };
-  fs.writeFileSync(
-    path.join(DEST_DIR, 'talk', data.slug),
-    template({...data, currentYear: new Date().getFullYear()})
+  writeFileSync(
+    join(DEST_DIR, 'talk', data.slug),
+    template({ ...data, currentYear: new Date().getFullYear() })
   );
 }
