@@ -9,11 +9,18 @@
       ],
       "videoEmbed": "<iframe width=\"960\" height=\"540\" src=\"https://www.youtube.com/embed/HZNM6n1g5n8\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
     }, {
-      "title": "Raspi IO",
-      "url": "https://github.com/nebrius/raspi-io",
+      "title": "Jotai Prototyping",
+      "url": "https://github.com/nebrius/jotai-prototyping",
       "description": [
-        "Raspi IO is a Firmata API compatible library for Raspbian running on the Raspberry Pi that can be used as an I/O plugin with Johnny-Five.",
-        "Raspi IO is built on Raspi.js, which I wrote to make it easier to work with hardware on the Raspberry Pi in a consistent way across disparate peripherals."
+        "A demo to explore using Jotai, Next.js, and my own library React Strapped together in a single application. This demo is written twice: once using Next.js' new App Router paradigm, and again using the older Pages router paradigm.",
+        "I created this library as both a way to learn about React Server Components and to vet/polish my React Strapped library"
+      ]
+    }, {
+      "title": "React Strapped",
+      "url": "https://github.com/nebrius/reduxology",
+      "description": [
+        "A library for working with bootstrap data in multi-page applications with differing bootstrap data",
+        "I created this library after struggling to implement easy-to-use data access mechanisms for bootstrap data that <em>also</em> provided safety mechanisms to prevent accessing data not intended for the current page."
       ]
     }, {
       "title": "Reduxology",
@@ -23,18 +30,18 @@
         "I created this library after watching folks struggle to learn Redux. In my experience, this struggle usually comes from the Redux API obscuring the Redux concepts with unecessary boilerplate."
       ]
     }, {
+      "title": "Raspi IO",
+      "url": "https://github.com/nebrius/raspi-io",
+      "description": [
+        "Raspi IO is a Firmata API compatible library for Raspbian running on the Raspberry Pi that can be used as an I/O plugin with Johnny-Five.",
+        "Raspi IO is built on Raspi.js, which I wrote to make it easier to work with hardware on the Raspberry Pi in a consistent way across disparate peripherals."
+      ]
+    }, {
       "title": "Aquarium Control",
       "url": "https://github.com/nebrius/aquarium-control",
       "description": [
         "A system for controlling the lights, monitoring temperature, and logging cleaning and water testing in my aquarium with a Raspberry Pi.",
         "This system has a React.js web UI for controlling the lighting, backed by Node.js on the Raspberry Pi."
-      ]
-    }, {
-      "title": "Contact Scheduler",
-      "url": "https://github.com/nebrius/contact-scheduler",
-      "description": [
-        "A desktop application for scheduling times to reach out to folks regularly that plays nicely with my anxiety.",
-        "The app is built in Electron.js, and remixes common UI patterns around notifications to make it more effective and less anxiety enducing."
       ]
     }, {
       "title": "Request Inspector",
@@ -47,7 +54,7 @@
       "url": "https://github.com/nebrius/commascript",
       "description": [
         "A statically typed, backwards compatible dialect of JavaScript.",
-        "An old experiment into how we could get static typing into JavaScript without new syntax. No longer under development."
+        "A very old experiment into how we could get static typing into JavaScript without new syntax. No longer under development since TypeScript came to popularity."
       ]
     }, {
       "title": "Dissertation",
