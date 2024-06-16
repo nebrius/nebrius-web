@@ -9,18 +9,18 @@
       ],
       "videoEmbed": "<iframe width=\"960\" height=\"540\" src=\"https://www.youtube.com/embed/HZNM6n1g5n8\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
     }, {
+      "title": "React Strapped",
+      "url": "https://github.com/nebrius/react-strapped",
+      "description": [
+        "A library for working with bootstrap data in multi-page applications with differing bootstrap data",
+        "I created this library after struggling to implement easy-to-use data access mechanisms for bootstrap data that <em>also</em> provided safety mechanisms to prevent accessing data not intended for the current page."
+      ]
+    }, {
       "title": "Jotai Prototyping",
       "url": "https://github.com/nebrius/jotai-prototyping",
       "description": [
         "A demo to explore using Jotai, Next.js, and my own library React Strapped together in a single application. This demo is written twice: once using Next.js' new App Router paradigm, and again using the older Pages router paradigm.",
         "I created this library as both a way to learn about React Server Components and to vet/polish my React Strapped library"
-      ]
-    }, {
-      "title": "React Strapped",
-      "url": "https://github.com/nebrius/reduxology",
-      "description": [
-        "A library for working with bootstrap data in multi-page applications with differing bootstrap data",
-        "I created this library after struggling to implement easy-to-use data access mechanisms for bootstrap data that <em>also</em> provided safety mechanisms to prevent accessing data not intended for the current page."
       ]
     }, {
       "title": "Reduxology",
