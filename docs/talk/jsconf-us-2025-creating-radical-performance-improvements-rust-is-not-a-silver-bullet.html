@@ -295,17 +295,17 @@ a {
 
 }
 </style>
-<title>&quot;Understanding Functions and &quot;this&quot; in the World of ES2018&quot; at Silicon Valley Code Camp</title>
+<title>&quot;Creating Radical Performance Improvements: Rust Is Not a Silver Bullet&quot; at JSConf US</title>
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:title" content="&quot;Understanding Functions and &quot;this&quot; in the World of ES2018&quot; at Silicon Valley Code Camp" />
+<meta property="og:title" content="&quot;Creating Radical Performance Improvements: Rust Is Not a Silver Bullet&quot; at JSConf US" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://nebri.us/static/me-small.jpg" />
-<meta property="og:url" content="https://nebri.us/talk/silicon-valley-code-camp-2018-understanding-functions-and-this-in-the-world-of-es2018.html" />
-<meta property="og:description" content="You can find details for my talk titled Understanding Functions and &quot;this&quot; in the World of ES2018 that I gave at Silicon Valley Code Camp in October, 2018" />
+<meta property="og:url" content="https://nebri.us/talk/jsconf-us-2025-creating-radical-performance-improvements-rust-is-not-a-silver-bullet.html" />
+<meta property="og:description" content="You can find details for my talk titled Creating Radical Performance Improvements: Rust Is Not a Silver Bullet that I gave at JSConf US in October, 2025" />
 <link rel="shortcut icon" href="/favicon.png">
 <meta name="theme-color" content="#550080">
-<meta name="Description" content="You can find details for my talk titled Understanding Functions and &quot;this&quot; in the World of ES2018 that I gave at Silicon Valley Code Camp in October, 2018">
+<meta name="Description" content="You can find details for my talk titled Creating Radical Performance Improvements: Rust Is Not a Silver Bullet that I gave at JSConf US in October, 2025">
 </head>
 
 <body>
@@ -320,39 +320,26 @@ a {
 </nav>
 
 <section class="content">
-  <h2>"Understanding Functions and &quot;this&quot; in the World of ES2018"</h2>
-  <div class="talk-page-event"><a href="https://www.siliconvalley-codecamp.com/Session/2018/understanding-functions-and-this-in-the-world-of-es2018">Silicon Valley Code Camp.</a></div>
-  <div class="talk-page-event-location">San Jose, California.</div>
-  <div class="talk-page-event-date">October 2018.</div>
+  <h2>"Creating Radical Performance Improvements: Rust Is Not a Silver Bullet"</h2>
+  <div class="talk-page-event"><a href="https://jsconf2025.sched.com/event/26Ub0/creating-radical-performance-improvements-rust-is-not-a-silver-bullet-bryan-hughes-speakeasy">JSConf US.</a></div>
+  <div class="talk-page-event-location">Chesapeake Bay, Maryland.</div>
+  <div class="talk-page-event-date">October 2025.</div>
 
   <div>
     <h4>Abstract</h4>
-      <p>The &quot;this&quot; keyword has long been a source of confusion, and new features added to JavaScript in recent years have muddled the picture even more.</p>
-      <p>This talk will walk you through the details of how &quot;this&quot; works in the context of modern JavaScript. We&#x27;ll cover the differences between function declarations, function expressions, arrow functions, object-shorthand function notation, and class fields, as well as best practices when integrating with other ES2015+ goodies.</p>
+      <p>I released a new import linting plugin that is 35 times faster than the plugin most people use today. Yes, you read that right, 35 times faster. Rust is an important part of this story, but is quite literally only half the performance story. The rest is good old fashioned clever algorithms and optimizations.</p>
+      <p>There is a lot of buzz around new Rust/Go based tooling and the performance they bring. And while these languages are powerful, they can only get us so far, certainly not 35 times faster. When we introduce Web Assembly into the mix, things get complicated quickly, with Rust being slower than JavaScript in some cases.</p>
+      <p>In this talk, I&#x27;ll discuss how Rust/Go can be so fast, but also how they aren&#x27;t the silver bullets some make them out to be. I&#x27;ll dive into uses cases, bench marks, and more so that you come away with a better understanding of when and how to use Rust/Go effectively. I&#x27;ll also discuss the importance of performant architectures and algorithms, which are useful in any language or codebase and often require less effort.</p>
   </div>
 
-  <div><h4>Video</h4><iframe width="560" height="315" src="https://www.youtube.com/embed/U41HVoEoCIE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-  <div><h4>Slides</h4><iframe src="//www.slideshare.net/slideshow/embed_code/key/80nQX2im2Sj7Vd" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></div>
 
   <div>
     <h4>Useful Links</h4>
     <div>
-      <div class="talk-page-link-anchor"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this">MDN&#x27;s &quot;this&quot; Documentation</a></div>
+      <div class="talk-page-link-anchor"><a href="https://github.com/nebrius/eslint-plugin-fast-import">Fast Import</a></div>
       <div class="talk-page-link-description">
-        <p>MDN has good documentation on the basic&#x27;s of how this works. I would especially recommend reading up on how strict mode affects this, which was not touched upon in the talk.</p>
-      </div>
-    </div>
-    <div>
-      <div class="talk-page-link-anchor"><a href="https://github.com/tc39/proposal-class-fields">Class Fields Proposal</a></div>
-      <div class="talk-page-link-description">
-        <p>This is the formal specification proposal for Class Fields in JavaScript. It has a number of helpful examples I recommend checking out.</p>
-      </div>
-    </div>
-    <div>
-      <div class="talk-page-link-anchor"><a href="https://reactjs.org/docs/handling-events.html">React Events Documentation</a></div>
-      <div class="talk-page-link-description">
-        <p>The React documentation does a good job explaining the complications with &quot;this&quot; event handlers, performance implications, etc.</p>
+        <p>The fast import linting plugin I released.</p>
       </div>
     </div>
   </div>

@@ -1,5 +1,27 @@
 {
   "upcoming": [
+    {
+      "title": "Creating Radical Performance Improvements: Rust Is Not a Silver Bullet",
+      "event": "JSConf US",
+      "location": "Chesapeake Bay, Maryland",
+      "month": "October",
+      "year": 2025,
+      "abstract": [
+        "I released a new import linting plugin that is 35 times faster than the plugin most people use today. Yes, you read that right, 35 times faster. Rust is an important part of this story, but is quite literally only half the performance story. The rest is good old fashioned clever algorithms and optimizations.",
+        "There is a lot of buzz around new Rust/Go based tooling and the performance they bring. And while these languages are powerful, they can only get us so far, certainly not 35 times faster. When we introduce Web Assembly into the mix, things get complicated quickly, with Rust being slower than JavaScript in some cases.",
+        "In this talk, I'll discuss how Rust/Go can be so fast, but also how they aren't the silver bullets some make them out to be. I'll dive into uses cases, bench marks, and more so that you come away with a better understanding of when and how to use Rust/Go effectively. I'll also discuss the importance of performant architectures and algorithms, which are useful in any language or codebase and often require less effort."
+      ],
+      "sessionLink": "https://jsconf2025.sched.com/event/26Ub0/creating-radical-performance-improvements-rust-is-not-a-silver-bullet-bryan-hughes-speakeasy",
+      "links": [
+        {
+          "title": "Fast Import",
+          "url": "https://github.com/nebrius/eslint-plugin-fast-import",
+          "description": [
+            "The fast import linting plugin I released."
+          ]
+        }
+      ]
+    }
   ],
   "conferences": [
     {
@@ -108,38 +130,44 @@
           "description": [
             ""
           ]
-        }, {
+        },
+        {
           "title": "\"Privacy Policy,\" by Brian Singer",
           "url": "https://dwebcamp2019.sched.com/artist/someguy1",
           "description": [
             ""
           ]
-        }, {
+        },
+        {
           "title": "\"Megaliths in the Bath House Ruins,\" by teamLab",
           "url": "https://www.teamlab.art/w/megaliths_bathhouse/",
           "description": [
             ""
           ]
-        }, {
+        },
+        {
           "title": "Selected Photography",
           "url": "https://nebri.us/photography.html",
           "description": [
             "Here you can find a selection of photos, including many of the photos I included in my talk."
           ]
-        }, {
+        },
+        {
           "title": "Building the Temple",
           "url": "https://burningman.org/event/art-performance/playa-art/building-the-temple/",
           "description": [
             "This is a good article describing what the Temple at Burning Man is, the Temple's history, and how it's built."
           ]
-        }, {
+        },
+        {
           "title": "Raver Lights",
           "url": "https://github.com/nebrius/raver-lights",
           "description": [
             "Raver Lights is an LED synchroniation system composed of hardware and software I developed to create LED art.",
             "I used this system to create the lighting for the Black Rock Public Library Deep Playa Branch art piece shown in the talk."
           ]
-        }, {
+        },
+        {
           "title": "Home Lights",
           "url": "https://github.com/nebrius/home-lights",
           "description": [
@@ -169,37 +197,43 @@
           "description": [
             "This repository contains the source code and circuit board schematics for the ESP8266 controllers in the art piece."
           ]
-        }, {
+        },
+        {
           "title": "Home Lights",
           "url": "https://github.com/nebrius/home-lights",
           "description": [
             "This repository contains the source code for the Raspberry Pi-based server for controlling the lights."
           ]
-        }, {
+        },
+        {
           "title": "rvl-node",
           "url": "https://github.com/nebrius/rvl-node",
           "description": [
             "This repository contains the library used to power the connection between the home lights server and the art piece controllers."
           ]
-        }, {
+        },
+        {
           "title": "rvl-node-animations",
           "url": "https://github.com/nebrius/rvl-node-animations",
           "description": [
             "This repository contains the library I used in the Arduino code example for creating animations, and is also used in the home lights server."
           ]
-        }, {
+        },
+        {
           "title": "node-pixel",
           "url": "https://github.com/ajfisher/node-pixel",
           "description": [
             "This repository contains the library I used in the Arduino code example for communicating with the LED strips."
           ]
-        }, {
+        },
+        {
           "title": "RPrez",
           "url": "https://github.com/nebrius/rprez",
           "description": [
             "This repository contains the presentation software I created for this talk (and others). Warning: poorly documented."
           ]
-        }, {
+        },
+        {
           "title": "Slide Deck",
           "url": "https://github.com/nebrius/conference-slides/tree/master/JSConf%20US%202019",
           "description": [
@@ -326,7 +360,8 @@
           ]
         }
       ]
-    }, {
+    },
+    {
       "title": "Understanding Functions and \"this\" in the World of ES2018",
       "event": "Silicon Valley Code Camp",
       "location": "San Jose, California",
@@ -362,7 +397,8 @@
           ]
         }
       ]
-    }, {
+    },
+    {
       "title": "TypeScript in Practice",
       "event": "Silicon Valley Code Camp",
       "location": "San Jose, California",
@@ -384,7 +420,8 @@
           ]
         }
       ]
-    }, {
+    },
+    {
       "title": "Effective Agile Processes: It's All About People",
       "event": "Node+JS Interactive",
       "location": "Vancouver, British Columbia, Canada",
@@ -403,7 +440,8 @@
           "description": [
             "The Agile Manifesto clearly articulates the core concepts common to all agile processes, upon which this talk is loosely based"
           ]
-        }, {
+        },
+        {
           "title": "Azure DevOps Boards",
           "url": "https://docs.microsoft.com/en-us/azure/devops/boards/sprints/index?WT.mc_id=nodejsinteractive2018-EffectiveAgile-brhugh",
           "description": [
@@ -412,217 +450,248 @@
           ]
         }
       ]
-    }, {
+    },
+    {
       "title": "Hacking with my Anxiety",
       "event": "JSConf US",
       "location": "Carlsbad, California",
       "month": "August",
       "year": 2018,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/vkZHEvZz6EU\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "The Mental Health Impacts of Growing Up Queer",
       "event": "#causeascene Conference",
       "location": "San Francisco, California",
       "month": "August",
       "year": 2018,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/rtikFmUHJoU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "Hacking with my Anxiety",
       "event": "Anxiety Tech",
       "location": "San Francisco, California",
       "month": "July",
       "year": 2018,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/8tB6Eo8iJ70\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "Understanding Functions and \"this\" in the World of ES2017",
       "event": "Node Summit",
       "location": "San Francisco",
       "month": "July",
       "year": 2018,
       "video": "https://vimeo.com/287510109"
-    }, {
+    },
+    {
       "title": "TypeScript in Practice",
       "event": "O'Reilly Fluent",
       "location": "San Jose, California",
       "month": "June",
       "year": 2018,
       "video": null
-    }, {
+    },
+    {
       "title": "Hardware 101: Understanding the T in IoT",
       "event": "Revolution Conf",
       "location": "Virginia Beach, Virginia",
       "month": "May",
       "year": 2018,
       "video": null
-    }, {
+    },
+    {
       "title": "'Works for Me': Understanding Privilege in Tech",
       "event": "JSConf Iceland",
       "location": "Reykjavík, Iceland",
       "month": "March",
       "year": 2018,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/M5jb2eEWr0A\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "Node.js + Raspberry Pi = Love",
       "event": "IBM Index",
       "location": "San Francisco, California",
       "month": "February",
       "year": 2018,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/zBgj-WPiL2g\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "TypeScript in Practice",
       "event": "IBM Index",
       "location": "San Francisco, California",
       "month": "February",
       "year": 2018,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/t-4ZsNNA93s\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "Building a JavaScript Powered, Cloud Connected Smart Aquarium",
       "event": "IBM Index",
       "location": "San Francisco, California",
       "month": "February",
       "year": 2018,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/DxlPY6m2vsY\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "Why Open Source Fails to Protect Under-Represented Minorities",
       "event": "AlterConf SF",
       "location": "San Francisco, California",
       "month": "December",
       "year": 2017,
       "video": null
-    }, {
+    },
+    {
       "title": "The Node.js Event Loop: Not So Single Threaded",
       "event": "Nodevember",
       "location": "Nashville, Tennessee",
       "month": "November",
       "year": 2017,
       "video": null
-    }, {
+    },
+    {
       "title": "Master of Ceremonies",
       "event": "NodeConf EU",
       "location": "Kilkenny, Ireland",
       "month": "November",
       "year": 2017,
       "video": null
-    }, {
+    },
+    {
       "title": "The Node.js Event Loop: Not So Single Threaded",
       "event": "Silicon Valley Code Camp",
       "location": "San Jose, California",
       "month": "October",
       "year": 2017,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/9y67eMUzj9A\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "The Node.js Event Loop: Not So Single Threaded",
       "event": "Node.js Interactive",
       "location": "Vancouver, British Columbia, Canada",
       "month": "October",
       "year": 2017,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/zphcsoSJMvM\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "The Node.js Event Loop: Not So Single Threaded",
       "event": "SeattleJS",
       "location": "Seattle Washington",
       "month": "August",
       "year": 2017,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/m-wKUc7TRHM\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "TypeScript in Practice",
       "event": "ForwardJS",
       "location": "San Francisco, California",
       "month": "July",
       "year": 2017,
       "video": null
-    }, {
+    },
+    {
       "title": "Works for Me: Understanding Privilege in Tech",
       "event": "ForwardJS",
       "location": "San Francisco, California",
       "month": "July",
       "year": 2017,
       "video": null
-    }, {
+    },
+    {
       "title": "Best Practices using TypeScript with Node.js",
       "event": "Node Interactive North America",
       "location": "Austin, Texas",
       "month": "November",
       "year": 2016,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ATUvAQZaTbM\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "The Node Community: Past, Present, and Future",
       "event": "NodeConf Italy (keynote)",
       "location": "Desenzano del Garda, Italy",
       "month": "October",
       "year": 2016,
       "video": null
-    }, {
+    },
+    {
       "title": "The Node Community: Past, Present, and Future",
       "event": "NodeConf EU",
       "location": "Kilkenny, Ireland",
       "month": "October",
       "year": 2016,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/8JVEN5lfhc8\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "API Design Through the Lens of Photography",
       "event": "CascadiaFest",
       "location": "Semiahmoo, Washington",
       "month": "August",
       "year": 2016,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UGkwBKutxdA\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "Increasing the Candidate Pool with Developer Bootcamps",
       "event": "Node Summit",
       "location": "San Francisco, California",
       "month": "July",
       "year": 2016,
       "video": null
-    }, {
+    },
+    {
       "title": "API Design Through the Lens of Photography",
       "event": "Open Source Bridge",
       "location": "Portland, Oregon",
       "month": "June",
       "year": 2016,
       "video": null
-    }, {
+    },
+    {
       "title": "API Design Through the Lens of Photography",
       "event": "Self.Conference",
       "location": "Detroit, Michigan",
       "month": "May",
       "year": 2016,
       "video": null
-    }, {
+    },
+    {
       "title": "The Risks and Rewards of Getting Involved and How to Do it",
       "event": "JSConf EU",
       "location": "Berlin, Germany",
       "month": "September",
       "year": 2015,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UcPCAYpgB7k\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "Make: JavaScript Robotics",
       "event": "Maker Faire",
       "location": "San Francisco, California",
       "month": "May",
       "year": 2015,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/DFTYT_BgBfI\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "The Risks and Rewards of Getting Involved",
       "event": "ForwardJS",
       "location": "San Francisco, California",
       "month": "February",
       "year": 2015,
       "video": null
-    }, {
+    },
+    {
       "title": "Electronic Fundamentals Survey",
       "event": "RobotsConf",
       "location": "Amelia Island, Florida",
       "month": "December",
       "year": 2014,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/vZ90Gj1lR5E\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "The Lesser Known Features of ES6",
       "event": "HTML5DevConf",
       "location": "San Francisco, California",
       "month": "October",
       "year": 2014,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/OmyNs2zq-J0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "The Lesser Known Features of ES6",
       "event": "ForwardJS",
       "location": "San Francisco, California",
@@ -639,49 +708,56 @@
       "month": "July",
       "year": 2018,
       "video": null
-    }, {
+    },
+    {
       "title": "Node.js Serverless Design and Best Practices",
       "event": "Dinosaur JS",
       "location": "Denver, Colorado",
       "month": "June",
       "year": 2018,
       "video": null
-    }, {
+    },
+    {
       "title": "Introduction to NodeBots",
       "event": "Node Summit",
       "location": "San Francisco, California",
       "month": "July",
       "year": 2017,
       "video": null
-    }, {
+    },
+    {
       "title": "TypeScript in Practice",
       "event": "Dinosaur JS",
       "location": "Denver, Colorado",
       "month": "June",
       "year": 2017,
       "video": null
-    }, {
+    },
+    {
       "title": "Windows 10 IoT Core, Raspberry Pi, and DotStars",
       "event": "NodeConf EU",
       "location": "Kilkenny, Ireland",
       "month": "October",
       "year": 2016,
       "video": null
-    }, {
+    },
+    {
       "title": "NeoPixels and Particle Photons",
       "event": "Node Summit",
       "location": "San Francisco, California",
       "month": "July",
       "year": 2016,
       "video": null
-    }, {
+    },
+    {
       "title": "NodeBoats",
       "event": "JSConf US",
       "location": "Amelia Island, Florida",
       "month": "May",
       "year": 2015,
       "video": null
-    }, {
+    },
+    {
       "title": "Building Your First Robot",
       "event": "ForwardJS",
       "location": "San Francisco, California",
@@ -804,35 +880,40 @@
       "month": "January",
       "year": 2018,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/fRus4lYrdM8\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "Works for Me: Understanding Privilege in Tech",
       "event": "WaffleJS",
       "location": "San Francisco, California",
       "month": "August",
       "year": 2017,
       "video": null
-    }, {
+    },
+    {
       "title": "Introduction and Best Practices for TypeScript",
       "event": "SFNode",
       "location": "San Francisco, California",
       "month": "June",
       "year": 2017,
       "videoEmbed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/YCb-Kz5fjEg\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-    }, {
+    },
+    {
       "title": "How to do Node.js robotics from a Raspberry Pi.",
       "event": "Connected Devices",
       "location": "San Francisco, California",
       "month": "March",
       "year": 2016,
       "video": null
-    }, {
+    },
+    {
       "title": "Successfully Hacking In Your Spare Time.",
       "event": "JS.LA",
       "location": "Los Angeles, California",
       "month": "June",
       "year": 2015,
       "video": "https://vimeo.com/131993092"
-    }, {
+    },
+    {
       "title": "How to Give a Conference Talk.",
       "event": "Sacramento JS",
       "location": "Sacramento, California",
