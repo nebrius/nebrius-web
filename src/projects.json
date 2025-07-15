@@ -21,7 +21,7 @@
       "url": "https://github.com/nebrius/react-strapped",
       "description": [
         "A library for working with bootstrap data in multi-page applications with differing bootstrap data",
-        "I created this library after struggling to implement easy-to-use data access mechanisms for bootstrap data that <em>also</em> provided safety mechanisms to prevent accessing data not intended for the current page."
+        "I created this library after struggling to implement easy-to-use data access mechanisms for bootstrap data that also provided safety mechanisms to prevent accessing data not intended for the current page."
       ]
     },
     {
