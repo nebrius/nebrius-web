@@ -14,6 +14,34 @@
       "sessionLink": "https://jsconf2025.sched.com/event/26Ub0/creating-radical-performance-improvements-rust-is-not-a-silver-bullet-bryan-hughes-speakeasy",
       "links": [
         {
+          "title": "SWC vs Babel",
+          "url": "https://swc.rs/blog/perf-swc-vs-babel",
+          "description": [
+            "Source for the SWC vs Babel numbers in the talk"
+          ]
+        },
+        {
+          "title": "OXLint vs ESLint",
+          "url": "https://github.com/oxc-project/bench-javascript-linter",
+          "description": [
+            "Source for the OXLint vs ESLint numbers in the talk"
+          ]
+        },
+        {
+          "title": "TSC Go vs TSC JavaScript",
+          "url": "https://devblogs.microsoft.com/typescript/typescript-native-port/",
+          "description": [
+            "Source for the SWC vs Babel numbers in the talk"
+          ]
+        },
+        {
+          "title": "Benchmarks",
+          "url": "https://github.com/nebrius/jsconf-2025-benchmarks",
+          "description": [
+            "The code for all the benchmarks I demonstrated in the talk."
+          ]
+        },
+        {
           "title": "Fast Import",
           "url": "https://github.com/nebrius/eslint-plugin-fast-import",
           "description": [
