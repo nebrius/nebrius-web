@@ -1,5 +1,5 @@
 {
-  "upcoming": [
+  "conferences": [
     {
       "title": "Creating Radical Performance Improvements: Rust Is Not a Silver Bullet",
       "event": "JSConf US",
@@ -49,9 +49,7 @@
           ]
         }
       ]
-    }
-  ],
-  "conferences": [
+    },
     {
       "title": "Taming the State Management Dragon",
       "event": "React Summit US",
