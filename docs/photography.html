@@ -261,13 +261,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     }
 
     .photo-container span {
-      padding-right: 5%;
-      flex-grow: 1;
-      min-width: 200px;
+      margin-right: 5%;
+      width: 250px;
+    }
+
+    .photo-container div {
+      width: calc(100% - 250px);
+      display: flex;
+      justify-content: center;
     }
 
     .photo-container img {
       max-width: 100%;
+      max-height: calc(100vh);
     }
 
     @media (max-width: 1400px) {
@@ -279,7 +285,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
       .photo-container span {
         padding-bottom: 10px;
-        flex-grow: 1;
+        width: 100%;
+        text-align: center;
       }
 
     }
@@ -339,6 +346,42 @@ more broadly? You can find some of my favorite photos I&#x27;ve taken on this pa
   </div>
 
   <div class="photo-container">
+    <span>Hirshhorn</span>
+    <div>
+      <img src="/static/photos/hirshhorn.jpg" alt="Hirshhorn by Bryan Hughes">
+    </div>
+  </div>
+  <div class="photo-container">
+    <span>Reckoning in the Dust</span>
+    <div>
+      <img src="/static/photos/reckoning_in_the_dust.jpg" alt="Reckoning in the Dust by Bryan Hughes">
+    </div>
+  </div>
+  <div class="photo-container">
+    <span>Lining the Entrance</span>
+    <div>
+      <img src="/static/photos/lining_the_entrance.jpg" alt="Lining the Entrance by Bryan Hughes">
+    </div>
+  </div>
+  <div class="photo-container">
+    <span>Shattered</span>
+    <div>
+      <img src="/static/photos/shattered.jpg" alt="Shattered by Bryan Hughes">
+    </div>
+  </div>
+  <div class="photo-container">
+    <span>Nestled in the Curves, A Couple</span>
+    <div>
+      <img src="/static/photos/nestled_in_the_curves_a_couple.jpg" alt="Nestled in the Curves, A Couple by Bryan Hughes">
+    </div>
+  </div>
+  <div class="photo-container">
+    <span>Playing for the Crowds</span>
+    <div>
+      <img src="/static/photos/playing_for_the_crowds.jpg" alt="Playing for the Crowds by Bryan Hughes">
+    </div>
+  </div>
+  <div class="photo-container">
     <span>Cold at the Edge of the World</span>
     <div>
       <img src="/static/photos/cold_at_the_edge_of_the_world.jpg" alt="Cold at the Edge of the World by Bryan Hughes">
@@ -357,27 +400,9 @@ more broadly? You can find some of my favorite photos I&#x27;ve taken on this pa
     </div>
   </div>
   <div class="photo-container">
-    <span>Hirshhorn</span>
-    <div>
-      <img src="/static/photos/hirshhorn.jpg" alt="Hirshhorn by Bryan Hughes">
-    </div>
-  </div>
-  <div class="photo-container">
-    <span>Lining the Entrance</span>
-    <div>
-      <img src="/static/photos/lining_the_entrance.jpg" alt="Lining the Entrance by Bryan Hughes">
-    </div>
-  </div>
-  <div class="photo-container">
     <span>Nestled Among the Cliffs</span>
     <div>
       <img src="/static/photos/nestled_among_the_cliffs.jpg" alt="Nestled Among the Cliffs by Bryan Hughes">
-    </div>
-  </div>
-  <div class="photo-container">
-    <span>Nestled in the Curves, A Couple</span>
-    <div>
-      <img src="/static/photos/nestled_in_the_curves_a_couple.jpg" alt="Nestled in the Curves, A Couple by Bryan Hughes">
     </div>
   </div>
   <div class="photo-container">
@@ -387,27 +412,9 @@ more broadly? You can find some of my favorite photos I&#x27;ve taken on this pa
     </div>
   </div>
   <div class="photo-container">
-    <span>Playing for the Crowds</span>
-    <div>
-      <img src="/static/photos/playing_for_the_crowds.jpg" alt="Playing for the Crowds by Bryan Hughes">
-    </div>
-  </div>
-  <div class="photo-container">
     <span>Ran Aground</span>
     <div>
       <img src="/static/photos/ran_aground.jpg" alt="Ran Aground by Bryan Hughes">
-    </div>
-  </div>
-  <div class="photo-container">
-    <span>Reckoning in the Dust</span>
-    <div>
-      <img src="/static/photos/reckoning_in_the_dust.jpg" alt="Reckoning in the Dust by Bryan Hughes">
-    </div>
-  </div>
-  <div class="photo-container">
-    <span>Shattered</span>
-    <div>
-      <img src="/static/photos/shattered.jpg" alt="Shattered by Bryan Hughes">
     </div>
   </div>
   <div class="photo-container">

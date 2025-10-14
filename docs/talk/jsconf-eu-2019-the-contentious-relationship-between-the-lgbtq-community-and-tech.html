@@ -261,13 +261,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     }
 
     .photo-container span {
-      padding-right: 5%;
-      flex-grow: 1;
-      min-width: 200px;
+      margin-right: 5%;
+      width: 250px;
+    }
+
+    .photo-container div {
+      width: calc(100% - 250px);
+      display: flex;
+      justify-content: center;
     }
 
     .photo-container img {
       max-width: 100%;
+      max-height: calc(100vh);
     }
 
     @media (max-width: 1400px) {
@@ -279,7 +285,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
       .photo-container span {
         padding-bottom: 10px;
-        flex-grow: 1;
+        width: 100%;
+        text-align: center;
       }
 
     }

@@ -1,6 +1,30 @@
 {
   "photos": [
     {
+      "title": "Hirshhorn",
+      "filename": "hirshhorn.jpg"
+    },
+    {
+      "title": "Reckoning in the Dust",
+      "filename": "reckoning_in_the_dust.jpg"
+    },
+    {
+      "title": "Lining the Entrance",
+      "filename": "lining_the_entrance.jpg"
+    },
+    {
+      "title": "Shattered",
+      "filename": "shattered.jpg"
+    },
+    {
+      "title": "Nestled in the Curves, A Couple",
+      "filename": "nestled_in_the_curves_a_couple.jpg"
+    },
+    {
+      "title": "Playing for the Crowds",
+      "filename": "playing_for_the_crowds.jpg"
+    },
+    {
       "title": "Cold at the Edge of the World",
       "filename": "cold_at_the_edge_of_the_world.jpg"
     },
@@ -13,40 +37,16 @@
       "filename": "decaying_under_the_island_sky.jpg"
     },
     {
-      "title": "Hirshhorn",
-      "filename": "hirshhorn.jpg"
-    },
-    {
-      "title": "Lining the Entrance",
-      "filename": "lining_the_entrance.jpg"
-    },
-    {
       "title": "Nestled Among the Cliffs",
       "filename": "nestled_among_the_cliffs.jpg"
-    },
-    {
-      "title": "Nestled in the Curves, A Couple",
-      "filename": "nestled_in_the_curves_a_couple.jpg"
     },
     {
       "title": "Photographing Balance in the Smokey Bay",
       "filename": "photographing_balance_in_the_smokey_bay.jpg"
     },
     {
-      "title": "Playing for the Crowds",
-      "filename": "playing_for_the_crowds.jpg"
-    },
-    {
       "title": "Ran Aground",
       "filename": "ran_aground.jpg"
-    },
-    {
-      "title": "Reckoning in the Dust",
-      "filename": "reckoning_in_the_dust.jpg"
-    },
-    {
-      "title": "Shattered",
-      "filename": "shattered.jpg"
     },
     {
       "title": "Sitting, Waiting",
