@@ -14,7 +14,7 @@
         "A wirelessly distributed lighting control system for programmable LED art.",
         "RVL is an ecosystem of hardware and software I desgined for building LED art pieces and fun home lighting. Here's a video of an art piece I designed with it at Burning Man 2019"
       ],
-      "videoEmbed": "<iframe width=\"960\" height=\"540\" src=\"https://www.youtube.com/embed/HZNM6n1g5n8\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+      "videoEmbed": "<iframe style=\"aspect-ratio: 48 / 27;\" width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/HZNM6n1g5n8\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
     },
     {
       "title": "React Strapped",
