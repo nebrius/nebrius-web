@@ -19,306 +19,309 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
-<style>
-body {
-  position: absolute;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  margin: 0;
-  left: 0;
-  top: 0;
-  right: 0;
-}
+  <meta charset="utf-8">
+  <style>
+    body {
+      position: absolute;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      margin: 0;
+      left: 0;
+      top: 0;
+      right: 0;
+    }
 
-a {
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px solid hsl(280, 100%, 25%);
-}
+    a {
+      color: black;
+      text-decoration: none;
+      border-bottom: 1px solid hsl(280, 100%, 25%);
+    }
 
-/* Borrowed from https://haltersweb.github.io/Accessibility/svg.html */
-.screen-reader-text { /* Hide only visually, but have it available for screenreaders */
-  position: absolute !important;
-  display: block;
-  visibility: visible;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0px, 0px, 0px, 0px); /* deprecated */
-  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
-  white-space: nowrap; /* wrap uses line feeds but LFs are not recognized as spaces by screen readers */
-}
+    /* Borrowed from https://haltersweb.github.io/Accessibility/svg.html */
+    .screen-reader-text {
+      /* Hide only visually, but have it available for screenreaders */
+      position: absolute !important;
+      display: block;
+      visibility: visible;
+      overflow: hidden;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      clip: rect(0px, 0px, 0px, 0px);
+      /* deprecated */
+      clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+      white-space: nowrap;
+      /* wrap uses line feeds but LFs are not recognized as spaces by screen readers */
+    }
 
-.menu {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .menu {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.menu ul {
-  padding: 0 10px;
-  margin: 0;
-}
+    .menu ul {
+      padding: 0 10px;
+      margin: 0;
+    }
 
-.menu li {
-  list-style: none;
-  text-align: right;
-  display: inline-block;
-  padding-right: 8px;
-}
+    .menu li {
+      list-style: none;
+      text-align: right;
+      display: inline-block;
+      padding-right: 8px;
+    }
 
-.menu li {
-  border-bottom: 1px solid white;
-}
+    .menu li {
+      border-bottom: 1px solid white;
+    }
 
-.menu a {
-  display: block;
-  font-size: 22pt;
-  font-weight: 300;
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid transparent;
-  padding-bottom: 2px;
-}
+    .menu a {
+      display: block;
+      font-size: 22pt;
+      font-weight: 300;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+    }
 
-.menu a:hover {
-  border-bottom: 1px solid hsl(280, 100%, 25%);
-}
+    .menu a:hover {
+      border-bottom: 1px solid hsl(280, 100%, 25%);
+    }
 
-.menu .active {
-  font-weight: 500;
-}
+    .menu .active {
+      font-weight: 500;
+    }
 
-.content {
-  font-weight: 300;
-  font-size: 18pt;
-  padding: 30px;
-  padding: 0 10%;
-  flex-grow: 1;
-}
+    .content {
+      font-weight: 300;
+      font-size: 18pt;
+      padding: 30px;
+      padding: 0 10%;
+      flex-grow: 1;
+    }
 
-.footer {
-  background-color: hsl(280, 100%, 25%);
-  color: white;
-  height: 100px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-}
+    .footer {
+      background-color: hsl(280, 100%, 25%);
+      color: white;
+      height: 100px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+    }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
 
-.footer a {
-  margin: 5px;
-  color: white;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-}
+    .footer a {
+      margin: 5px;
+      color: white;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
 
-.footer a:hover {
-  color: lightgray;
-}
+    .footer a:hover {
+      color: lightgray;
+    }
 
-.footer span {
-  padding-top: 10px;
-  color: lightgray;
-}
+    .footer span {
+      padding-top: 10px;
+      color: lightgray;
+    }
 
-/* About specific classes */
+    /* About specific classes */
 
-@media (max-width: 1200px) {
+    @media (max-width: 1200px) {
 
-  .about {
-    display: flex;
-    flex-direction: column;
-  }
+      .about {
+        display: flex;
+        flex-direction: column;
+      }
 
-  .about-content {
-    margin-bottom: 40px;
-  }
+      .about-content {
+        margin-bottom: 40px;
+      }
 
-  .about-image img {
-    max-width: 100%;
-  }
+      .about-image img {
+        max-width: 100%;
+      }
 
-}
+    }
 
-@media (min-width: 1200px) {
+    @media (min-width: 1200px) {
 
-  .about {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+      .about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
 
-  .about-content {
-    flex-grow: 2;
-    flex-basis: 0;
-    margin-right: 10%;
-  }
+      .about-content {
+        flex-grow: 2;
+        flex-basis: 0;
+        margin-right: 10%;
+      }
 
-  .about-image {
-    flex-grow: 1;
-    flex-basis: 0;
-  }
+      .about-image {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
 
-  .about-image img {
-    max-width: 100%;
-  }
+      .about-image img {
+        max-width: 100%;
+      }
 
-}
+    }
 
-/* Talk specific classes */
+    /* Talk specific classes */
 
-.talk {
-  margin-bottom: 40px;
-}
+    .talk {
+      margin-bottom: 40px;
+    }
 
-.talk-details {
-  margin-top: 10px;
-  margin-left: 20px;
-}
+    .talk-details {
+      margin-top: 10px;
+      margin-left: 20px;
+    }
 
-.talk-event {
-  font-style: italic;
-}
+    .talk-event {
+      font-style: italic;
+    }
 
-.talk-event-details {
-  color: #555;
-}
+    .talk-event-details {
+      color: #555;
+    }
 
-/* Talk landing page specific classes */
+    /* Talk landing page specific classes */
 
-.talk-page-event {
-  font-style: italic;
-  font-size: 1.2em;
-}
+    .talk-page-event {
+      font-style: italic;
+      font-size: 1.2em;
+    }
 
-.talk-page-event-location {
-  color: #555;
-  font-size: 1.2em;
-  margin-top: 10px;
-}
+    .talk-page-event-location {
+      color: #555;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
 
-.talk-page-event-date {
-  color: #555;
-  font-size: 1.2em;
-  margin-top: 10px;
-}
+    .talk-page-event-date {
+      color: #555;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
 
-.talk-page-link-anchor {
-  font-size: 1.1em;
-}
+    .talk-page-link-anchor {
+      font-size: 1.1em;
+    }
 
-.talk-page-link-description {
-  padding-left: 8px;
-}
+    .talk-page-link-description {
+      padding-left: 8px;
+    }
 
-/* Project specific classes */
+    /* Project specific classes */
 
-.project-title {
-  font-size: 1.2em;
-}
+    .project-title {
+      font-size: 1.2em;
+    }
 
-.project-description {
-  margin-left: 20px;
-}
+    .project-description {
+      margin-left: 20px;
+    }
 
-.project-video {
-  margin-left: 30px;
-  margin-bottom: 40px;
-}
+    .project-video {
+      margin-left: 30px;
+      margin-bottom: 40px;
+    }
 
-/* Photography specific classes */
+    /* Photography specific classes */
 
-.photo-forward {
-  margin-bottom: 40px;
-}
+    .photo-forward {
+      margin-bottom: 40px;
+    }
 
-.photo-container {
-  display: flex;
-  max-width: 1600px;
-}
+    .photo-container {
+      display: flex;
+      max-width: 1600px;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 40px;
+    }
 
-.photo-container a {
-  border: none;
-}
+    .photo-container span {
+      padding-right: 5%;
+      flex-grow: 1;
+      min-width: 200px;
+    }
 
-@media (min-width: 1400px) {
+    .photo-container img {
+      max-width: 100%;
+    }
 
-  .photo-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+    @media (max-width: 1400px) {
 
-  .photo-container span {
-    padding-right: 5%;
-    flex-grow: 1;
-  }
+      .photo-container {
+        display: flex;
+        flex-direction: column;
+      }
 
-}
+      .photo-container span {
+        padding-bottom: 10px;
+        flex-grow: 1;
+      }
 
-@media (max-width: 1400px) {
-
-  .photo-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .photo-container span {
-    padding-bottom: 10px;
-    flex-grow: 1;
-  }
-
-  .photo-container a {
-    margin-bottom: 40px;
-  }
-
-  .photo-container img {
-    max-width: 100%;
-  }
-
-}
-</style>
-<title>Bryan Hughes&#x27; Photography</title>
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:title" content="Bryan Hughes&#x27; Photography" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://nebri.us/static/me-small.jpg" />
-<meta property="og:url" content="https://nebri.us/photography.html" />
-<meta property="og:description" content="Photography is my primary form of artistic expression. I like to study the relationship between people and the architecture around them. What is that relationship like? What does the relationship mean to the individual? To society? What does it say about us more broadly? You can find some of my favorite photos I&#x27;ve taken on this page." />
-<link rel="shortcut icon" href="/favicon.png">
-<meta name="theme-color" content="#550080">
-<meta name="Description" content="Photography is my primary form of artistic expression. I like to study the relationship between people and the architecture around them. What is that relationship like? What does the relationship mean to the individual? To society? What does it say about us more broadly? You can find some of my favorite photos I&#x27;ve taken on this page.">
+    }
+  </style>
+  <title>Bryan Hughes&#x27; Photography</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+    rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Bryan Hughes&#x27; Photography" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://nebri.us/static/me-small.jpg" />
+  <meta property="og:url" content="https://nebri.us/photography.html" />
+  <meta property="og:description" content="Photography is my
+primary form of artistic expression. I like to study the relationship between people and the architecture around them.
+What is that relationship like? What does the relationship mean to the individual? To society? What does it say about us
+more broadly? You can find some of my favorite photos I&#x27;ve taken on this page." />
+  <link rel="shortcut icon" href="/favicon.png">
+  <meta name="theme-color" content="#550080">
+  <meta name="Description" content="Photography is my
+primary form of artistic expression. I like to study the relationship between people and the architecture around them.
+What is that relationship like? What does the relationship mean to the individual? To society? What does it say about us
+more broadly? You can find some of my favorite photos I&#x27;ve taken on this page.">
 </head>
 
 <body>
 
-<nav class="menu">
-  <ul>
-    <li><a href="/">about</a></li>
-    <li><a href="/talks.html">talks</a></li>
-    <li><a href="/projects.html">projects</a></li>
-    <li><a class="active" href="/photography.html">photography</a></li>
-  </ul>
-</nav>
-
+  <nav class="menu">
+    <ul>
+      <li>
+        <a href="/">about</a>
+      </li>
+      <li>
+        <a href="/talks.html">talks</a>
+      </li>
+      <li>
+        <a href="/projects.html">projects</a>
+      </li>
+      <li>
+        <a class="active"  href="/photography.html">photography</a>
+      </li>
+    </ul>
+  </nav>
 <section class="content">
   <h1>Hi. I do photography.</h1>
 
@@ -336,70 +339,106 @@ a {
   </div>
 
   <div class="photo-container">
+    <span>Cold at the Edge of the World</span>
+    <div>
+      <img src="/static/photos/cold_at_the_edge_of_the_world.jpg" alt="Cold at the Edge of the World by Bryan Hughes">
+    </div>
+  </div>
+  <div class="photo-container">
+    <span>Contemplating the Obscured</span>
+    <div>
+      <img src="/static/photos/contemplating_the_obscured.jpg" alt="Contemplating the Obscured by Bryan Hughes">
+    </div>
+  </div>
+  <div class="photo-container">
+    <span>Decaying Under the Island Sky</span>
+    <div>
+      <img src="/static/photos/decaying_under_the_island_sky.jpg" alt="Decaying Under the Island Sky by Bryan Hughes">
+    </div>
+  </div>
+  <div class="photo-container">
     <span>Hirshhorn</span>
-    <a href="https://500px.com/photo/243669081/hirshhorn-by-bryan-hughes" alt="Hirshhorn by Bryan Hughes on 500px.com">
-      <img src="https://drscdn.500px.org/photo/243669081/m%3D900/v2?user_id&#x3D;16238619&amp;webp&#x3D;true&amp;sig&#x3D;12424a62f44e525628e6f4bb63205a3ef7ab9e5a6d7c03ff1711f0b9e53f22c9" alt="Hirshhorn by Bryan Hughes on 500px.com">
-    </a>
+    <div>
+      <img src="/static/photos/hirshhorn.jpg" alt="Hirshhorn by Bryan Hughes">
+    </div>
   </div>
   <div class="photo-container">
-    <span>Color in the Desolation</span>
-    <a href="https://500px.com/photo/308984279/color-in-the-desolation-by-bryan-hughes" alt="Color in the Desolation by Bryan Hughes on 500px.com">
-      <img src="https://drscdn.500px.org/photo/308984279/m%3D900/v2?webp&#x3D;true&amp;sig&#x3D;9b81fd55ace5281b2cf9512dbf8bd0b6136c219d5cf494cbd3ebaeed5e677087" alt="Color in the Desolation by Bryan Hughes on 500px.com">
-    </a>
+    <span>Lining the Entrance</span>
+    <div>
+      <img src="/static/photos/lining_the_entrance.jpg" alt="Lining the Entrance by Bryan Hughes">
+    </div>
   </div>
   <div class="photo-container">
-    <span>Under the Colonnade</span>
-    <a href="https://500px.com/photo/285497001/under-the-colonnade-by-bryan-hughes" alt="Under the Colonnade by Bryan Hughes on 500px.com">
-      <img src="https://drscdn.500px.org/photo/285497001/m%3D900/v2?webp&#x3D;true&amp;sig&#x3D;98b37a6c12772cf8b19695b0b0e6975cd869f26400e3e272d4b046eaf3409a0f" alt="Under the Colonnade by Bryan Hughes on 500px.com">
-    </a>
+    <span>Nestled Among the Cliffs</span>
+    <div>
+      <img src="/static/photos/nestled_among_the_cliffs.jpg" alt="Nestled Among the Cliffs by Bryan Hughes">
+    </div>
+  </div>
+  <div class="photo-container">
+    <span>Nestled in the Curves, A Couple</span>
+    <div>
+      <img src="/static/photos/nestled_in_the_curves_a_couple.jpg" alt="Nestled in the Curves, A Couple by Bryan Hughes">
+    </div>
   </div>
   <div class="photo-container">
     <span>Photographing Balance in the Smokey Bay</span>
-    <a href="https://500px.com/photo/248229839/photographing-balance-in-the-smokey-bay-by-bryan-hughes" alt="Photographing Balance in the Smokey Bay by Bryan Hughes on 500px.com">
-      <img src="https://drscdn.500px.org/photo/248229839/m%3D900/v2?user_id&#x3D;16238619&amp;webp&#x3D;true&amp;sig&#x3D;52d51512d51278eb904b698babd232495db293108dfd879dd03ef86351893415" alt="Photographing Balance in the Smokey Bay by Bryan Hughes on 500px.com">
-    </a>
+    <div>
+      <img src="/static/photos/photographing_balance_in_the_smokey_bay.jpg" alt="Photographing Balance in the Smokey Bay by Bryan Hughes">
+    </div>
   </div>
   <div class="photo-container">
-    <span>Communicating in Architectural Lines</span>
-    <a href="https://500px.com/photo/276477317/communicating-in-architectural-lines-by-bryan-hughes" alt="Communicating in Architectural Lines by Bryan Hughes on 500px.com">
-      <img src="https://drscdn.500px.org/photo/276477317/m%3D900/v2?user_id&#x3D;16238619&amp;webp&#x3D;true&amp;sig&#x3D;384c0d38bd41e8a7b3d4d00312d0554f3fbe4f8a2a8ec7d65de82f33b4b9faf2" alt="Communicating in Architectural Lines by Bryan Hughes on 500px.com">
-    </a>
+    <span>Playing for the Crowds</span>
+    <div>
+      <img src="/static/photos/playing_for_the_crowds.jpg" alt="Playing for the Crowds by Bryan Hughes">
+    </div>
   </div>
   <div class="photo-container">
-    <span>Rugged Chariots Await</span>
-    <a href="https://500px.com/photo/308979511/rugged-chariots-await-by-bryan-hughes" alt="Rugged Chariots Await by Bryan Hughes on 500px.com">
-      <img src="https://drscdn.500px.org/photo/308979511/m%3D900/v2?webp&#x3D;true&amp;sig&#x3D;dae2aebe868156299611ea37faa166d4691af317ebad211732153b299e23e7fd" alt="Rugged Chariots Await by Bryan Hughes on 500px.com">
-    </a>
+    <span>Ran Aground</span>
+    <div>
+      <img src="/static/photos/ran_aground.jpg" alt="Ran Aground by Bryan Hughes">
+    </div>
   </div>
   <div class="photo-container">
-    <span>Walking on a Lack of Reflection</span>
-    <a href="https://500px.com/photo/243672801/walking-on-a-lack-of-reflection-by-bryan-hughes" alt="Walking on a Lack of Reflection by Bryan Hughes on 500px.com">
-      <img src="https://drscdn.500px.org/photo/243672801/m%3D900/v2?user_id&#x3D;16238619&amp;webp&#x3D;true&amp;sig&#x3D;d08f8a1289d0a99f63d68605e6363cb0542f1441ca47a6073618d654c5288f03" alt="Walking on a Lack of Reflection by Bryan Hughes on 500px.com">
-    </a>
+    <span>Reckoning in the Dust</span>
+    <div>
+      <img src="/static/photos/reckoning_in_the_dust.jpg" alt="Reckoning in the Dust by Bryan Hughes">
+    </div>
   </div>
   <div class="photo-container">
     <span>Shattered</span>
-    <a href="https://500px.com/photo/248325067/shattered-by-bryan-hughes" alt="Shattered by Bryan Hughes on 500px.com">
-      <img src="https://drscdn.500px.org/photo/248325067/m%3D900/v2?user_id&#x3D;16238619&amp;webp&#x3D;true&amp;sig&#x3D;d146a669c4ae38176bd9fe6f50982bb2f6c4b62c389141cc8b50047255d54bef" alt="Shattered by Bryan Hughes on 500px.com">
-    </a>
+    <div>
+      <img src="/static/photos/shattered.jpg" alt="Shattered by Bryan Hughes">
+    </div>
   </div>
   <div class="photo-container">
-    <span>Among the Vines</span>
-    <a href="https://500px.com/photo/264870329/among-the-vines-by-bryan-hughes" alt="Among the Vines by Bryan Hughes on 500px.com">
-      <img src="https://drscdn.500px.org/photo/264870329/m%3D900/v2?user_id&#x3D;16238619&amp;webp&#x3D;true&amp;sig&#x3D;5b8d363af50e164a6c1928ba43cf35a7576dff62d9a12a710d5d19607c6ae4d4" alt="Among the Vines by Bryan Hughes on 500px.com">
-    </a>
+    <span>Sitting, Waiting</span>
+    <div>
+      <img src="/static/photos/sitting_waiting.jpg" alt="Sitting, Waiting by Bryan Hughes">
+    </div>
   </div>
   <div class="photo-container">
-    <span>Flower Tower</span>
-    <a href="https://500px.com/photo/227685587/flower-tower-by-bryan-hughes" alt="Flower Tower by Bryan Hughes on 500px.com">
-      <img src="https://drscdn.500px.org/photo/227685587/m%3D900/v2?user_id&#x3D;16238619&amp;webp&#x3D;true&amp;sig&#x3D;5b22a83c6bde32261bf9fda185b4d8e9bae3dc26472b903fc6bc9e90ff643320" alt="Flower Tower by Bryan Hughes on 500px.com">
-    </a>
+    <span>The Sun Voyager on a Cloudy Day</span>
+    <div>
+      <img src="/static/photos/the_sun_voyager_on_a_cloudy_day.jpg" alt="The Sun Voyager on a Cloudy Day by Bryan Hughes">
+    </div>
   </div>
   <div class="photo-container">
-    <span>As the Giants Swim By</span>
-    <a href="https://500px.com/photo/255540781/as-the-giants-swim-by-by-bryan-hughes" alt="As the Giants Swim By by Bryan Hughes on 500px.com">
-      <img src="https://drscdn.500px.org/photo/255540781/m%3D900/v2?user_id&#x3D;16238619&amp;webp&#x3D;true&amp;sig&#x3D;9484571db499fcf4ab6aa1f6fd2a161057437c56e3ac86be241a38e9ed967e6c" alt="As the Giants Swim By by Bryan Hughes on 500px.com">
-    </a>
+    <span>Under the Colonnade</span>
+    <div>
+      <img src="/static/photos/under_the_colonnade.jpg" alt="Under the Colonnade by Bryan Hughes">
+    </div>
+  </div>
+  <div class="photo-container">
+    <span>View From the Dock at Night</span>
+    <div>
+      <img src="/static/photos/view_from_the_dock_at_night.jpg" alt="View From the Dock at Night by Bryan Hughes">
+    </div>
+  </div>
+  <div class="photo-container">
+    <span>Waiting in the Light of the Underground</span>
+    <div>
+      <img src="/static/photos/waiting_in_the_light_of_the_underground.jpg" alt="Waiting in the Light of the Underground by Bryan Hughes">
+    </div>
   </div>
 
 </section>

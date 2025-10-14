@@ -19,306 +19,303 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
-<style>
-body {
-  position: absolute;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  margin: 0;
-  left: 0;
-  top: 0;
-  right: 0;
-}
+  <meta charset="utf-8">
+  <style>
+    body {
+      position: absolute;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      margin: 0;
+      left: 0;
+      top: 0;
+      right: 0;
+    }
 
-a {
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px solid hsl(280, 100%, 25%);
-}
+    a {
+      color: black;
+      text-decoration: none;
+      border-bottom: 1px solid hsl(280, 100%, 25%);
+    }
 
-/* Borrowed from https://haltersweb.github.io/Accessibility/svg.html */
-.screen-reader-text { /* Hide only visually, but have it available for screenreaders */
-  position: absolute !important;
-  display: block;
-  visibility: visible;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0px, 0px, 0px, 0px); /* deprecated */
-  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
-  white-space: nowrap; /* wrap uses line feeds but LFs are not recognized as spaces by screen readers */
-}
+    /* Borrowed from https://haltersweb.github.io/Accessibility/svg.html */
+    .screen-reader-text {
+      /* Hide only visually, but have it available for screenreaders */
+      position: absolute !important;
+      display: block;
+      visibility: visible;
+      overflow: hidden;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      clip: rect(0px, 0px, 0px, 0px);
+      /* deprecated */
+      clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+      white-space: nowrap;
+      /* wrap uses line feeds but LFs are not recognized as spaces by screen readers */
+    }
 
-.menu {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .menu {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.menu ul {
-  padding: 0 10px;
-  margin: 0;
-}
+    .menu ul {
+      padding: 0 10px;
+      margin: 0;
+    }
 
-.menu li {
-  list-style: none;
-  text-align: right;
-  display: inline-block;
-  padding-right: 8px;
-}
+    .menu li {
+      list-style: none;
+      text-align: right;
+      display: inline-block;
+      padding-right: 8px;
+    }
 
-.menu li {
-  border-bottom: 1px solid white;
-}
+    .menu li {
+      border-bottom: 1px solid white;
+    }
 
-.menu a {
-  display: block;
-  font-size: 22pt;
-  font-weight: 300;
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid transparent;
-  padding-bottom: 2px;
-}
+    .menu a {
+      display: block;
+      font-size: 22pt;
+      font-weight: 300;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+    }
 
-.menu a:hover {
-  border-bottom: 1px solid hsl(280, 100%, 25%);
-}
+    .menu a:hover {
+      border-bottom: 1px solid hsl(280, 100%, 25%);
+    }
 
-.menu .active {
-  font-weight: 500;
-}
+    .menu .active {
+      font-weight: 500;
+    }
 
-.content {
-  font-weight: 300;
-  font-size: 18pt;
-  padding: 30px;
-  padding: 0 10%;
-  flex-grow: 1;
-}
+    .content {
+      font-weight: 300;
+      font-size: 18pt;
+      padding: 30px;
+      padding: 0 10%;
+      flex-grow: 1;
+    }
 
-.footer {
-  background-color: hsl(280, 100%, 25%);
-  color: white;
-  height: 100px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-}
+    .footer {
+      background-color: hsl(280, 100%, 25%);
+      color: white;
+      height: 100px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+    }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
 
-.footer a {
-  margin: 5px;
-  color: white;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-}
+    .footer a {
+      margin: 5px;
+      color: white;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
 
-.footer a:hover {
-  color: lightgray;
-}
+    .footer a:hover {
+      color: lightgray;
+    }
 
-.footer span {
-  padding-top: 10px;
-  color: lightgray;
-}
+    .footer span {
+      padding-top: 10px;
+      color: lightgray;
+    }
 
-/* About specific classes */
+    /* About specific classes */
 
-@media (max-width: 1200px) {
+    @media (max-width: 1200px) {
 
-  .about {
-    display: flex;
-    flex-direction: column;
-  }
+      .about {
+        display: flex;
+        flex-direction: column;
+      }
 
-  .about-content {
-    margin-bottom: 40px;
-  }
+      .about-content {
+        margin-bottom: 40px;
+      }
 
-  .about-image img {
-    max-width: 100%;
-  }
+      .about-image img {
+        max-width: 100%;
+      }
 
-}
+    }
 
-@media (min-width: 1200px) {
+    @media (min-width: 1200px) {
 
-  .about {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+      .about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
 
-  .about-content {
-    flex-grow: 2;
-    flex-basis: 0;
-    margin-right: 10%;
-  }
+      .about-content {
+        flex-grow: 2;
+        flex-basis: 0;
+        margin-right: 10%;
+      }
 
-  .about-image {
-    flex-grow: 1;
-    flex-basis: 0;
-  }
+      .about-image {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
 
-  .about-image img {
-    max-width: 100%;
-  }
+      .about-image img {
+        max-width: 100%;
+      }
 
-}
+    }
 
-/* Talk specific classes */
+    /* Talk specific classes */
 
-.talk {
-  margin-bottom: 40px;
-}
+    .talk {
+      margin-bottom: 40px;
+    }
 
-.talk-details {
-  margin-top: 10px;
-  margin-left: 20px;
-}
+    .talk-details {
+      margin-top: 10px;
+      margin-left: 20px;
+    }
 
-.talk-event {
-  font-style: italic;
-}
+    .talk-event {
+      font-style: italic;
+    }
 
-.talk-event-details {
-  color: #555;
-}
+    .talk-event-details {
+      color: #555;
+    }
 
-/* Talk landing page specific classes */
+    /* Talk landing page specific classes */
 
-.talk-page-event {
-  font-style: italic;
-  font-size: 1.2em;
-}
+    .talk-page-event {
+      font-style: italic;
+      font-size: 1.2em;
+    }
 
-.talk-page-event-location {
-  color: #555;
-  font-size: 1.2em;
-  margin-top: 10px;
-}
+    .talk-page-event-location {
+      color: #555;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
 
-.talk-page-event-date {
-  color: #555;
-  font-size: 1.2em;
-  margin-top: 10px;
-}
+    .talk-page-event-date {
+      color: #555;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
 
-.talk-page-link-anchor {
-  font-size: 1.1em;
-}
+    .talk-page-link-anchor {
+      font-size: 1.1em;
+    }
 
-.talk-page-link-description {
-  padding-left: 8px;
-}
+    .talk-page-link-description {
+      padding-left: 8px;
+    }
 
-/* Project specific classes */
+    /* Project specific classes */
 
-.project-title {
-  font-size: 1.2em;
-}
+    .project-title {
+      font-size: 1.2em;
+    }
 
-.project-description {
-  margin-left: 20px;
-}
+    .project-description {
+      margin-left: 20px;
+    }
 
-.project-video {
-  margin-left: 30px;
-  margin-bottom: 40px;
-}
+    .project-video {
+      margin-left: 30px;
+      margin-bottom: 40px;
+    }
 
-/* Photography specific classes */
+    /* Photography specific classes */
 
-.photo-forward {
-  margin-bottom: 40px;
-}
+    .photo-forward {
+      margin-bottom: 40px;
+    }
 
-.photo-container {
-  display: flex;
-  max-width: 1600px;
-}
+    .photo-container {
+      display: flex;
+      max-width: 1600px;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 40px;
+    }
 
-.photo-container a {
-  border: none;
-}
+    .photo-container span {
+      padding-right: 5%;
+      flex-grow: 1;
+      min-width: 200px;
+    }
 
-@media (min-width: 1400px) {
+    .photo-container img {
+      max-width: 100%;
+    }
 
-  .photo-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+    @media (max-width: 1400px) {
 
-  .photo-container span {
-    padding-right: 5%;
-    flex-grow: 1;
-  }
+      .photo-container {
+        display: flex;
+        flex-direction: column;
+      }
 
-}
+      .photo-container span {
+        padding-bottom: 10px;
+        flex-grow: 1;
+      }
 
-@media (max-width: 1400px) {
-
-  .photo-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .photo-container span {
-    padding-bottom: 10px;
-    flex-grow: 1;
-  }
-
-  .photo-container a {
-    margin-bottom: 40px;
-  }
-
-  .photo-container img {
-    max-width: 100%;
-  }
-
-}
-</style>
-<title>Bryan Hughes&#x27; Website</title>
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:title" content="Bryan Hughes&#x27; Website" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://nebri.us/static/me-small.jpg" />
-<meta property="og:url" content="https://nebri.us/" />
-<meta property="og:description" content="Hi, I&#x27;m Bryan. Welcome to my website! Here you can find all sorts of information about me, including my talk schedule, select photography, and more." />
-<link rel="shortcut icon" href="/favicon.png">
-<meta name="theme-color" content="#550080">
-<meta name="Description" content="Hi, I&#x27;m Bryan. Welcome to my website! Here you can find all sorts of information about me, including my talk schedule, select photography, and more.">
+    }
+  </style>
+  <title>Bryan Hughes&#x27; Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+    rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Bryan Hughes&#x27; Website" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://nebri.us/static/me-small.jpg" />
+  <meta property="og:url" content="https://nebri.us/" />
+  <meta property="og:description" content="Hi, I&#x27;m Bryan. Welcome to my website! Here you can find all sorts of information about me, including my talk schedule, select photography, and more." />
+  <link rel="shortcut icon" href="/favicon.png">
+  <meta name="theme-color" content="#550080">
+  <meta name="Description" content="Hi, I&#x27;m Bryan. Welcome to my website! Here you can find all sorts of information about me, including my talk schedule, select photography, and more.">
 </head>
 
 <body>
 
-<nav class="menu">
-  <ul>
-    <li><a class="active" href="/">about</a></li>
-    <li><a href="/talks.html">talks</a></li>
-    <li><a href="/projects.html">projects</a></li>
-    <li><a href="/photography.html">photography</a></li>
-  </ul>
-</nav>
-
+  <nav class="menu">
+    <ul>
+      <li>
+        <a class="active"  href="/">about</a>
+      </li>
+      <li>
+        <a href="/talks.html">talks</a>
+      </li>
+      <li>
+        <a href="/projects.html">projects</a>
+      </li>
+      <li>
+        <a href="/photography.html">photography</a>
+      </li>
+    </ul>
+  </nav>
 <section class="content">
   <h1>Hi. I'm Bryan.</h1>
   <div class="about">
