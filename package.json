@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/nebrius/nebrius.github.io#readme",
   "dependencies": {
-    "cpy": "^11.0.1",
+    "cpy": "^12.1.0",
     "handlebars": "^4.7.7",
     "http-server": "^14.0.0"
   }
