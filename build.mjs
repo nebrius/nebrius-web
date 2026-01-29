@@ -47,15 +47,21 @@ let numTalks = 0;
 
 compileFile('index');
 mkdirSync(join(DEST_DIR, 'talk'));
+const talksPerCategory = {};
 for (const category in talkData) {
+  talksPerCategory[category] = 0;
   for (const talk of talkData[category]) {
     talk.slug = getSlug(talk);
     compileTalkFile(talk);
+    talksPerCategory[category]++;
   }
 }
 compileFile('talks', talkData);
 compileFile('photography', photoData);
 compileFile('projects', projectsData);
+for (const category in talksPerCategory) {
+  console.log(`  ${category}: ${talksPerCategory[category]}`);
+}
 console.log(`Compiled ${numTalks} talks.`);
 
 cpy(join(__dirname, 'assets/**/*'), DEST_DIR);
