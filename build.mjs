@@ -16,37 +16,41 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { join } from 'node:path';
-import { mkdirSync, readFileSync, writeFileSync, rmSync } from 'node:fs';
-import { dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import handlebars from 'handlebars';
-import cpy from 'cpy';
+import { join } from "node:path";
+import { mkdirSync, readFileSync, writeFileSync, rmSync } from "node:fs";
+import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+import handlebars from "handlebars";
+import cpy from "cpy";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const SRC_DIR = join(__dirname, 'src');
-const DEST_DIR = join(__dirname, 'docs');
+const SRC_DIR = join(__dirname, "src");
+const DEST_DIR = join(__dirname, "docs");
 
 rmSync(DEST_DIR, {
   recursive: true,
-  force: true
+  force: true,
 });
 mkdirSync(join(DEST_DIR));
 
 handlebars.registerPartial({
-  header: getTemplate('header'),
-  footer: getTemplate('footer')
+  header: getTemplate("header"),
+  footer: getTemplate("footer"),
 });
 
-const talkData = JSON.parse(readFileSync(join(SRC_DIR, 'talks.json'), 'utf-8'));
-const photoData = JSON.parse(readFileSync(join(SRC_DIR, 'photos.json'), 'utf-8'));
-const projectsData = JSON.parse(readFileSync(join(SRC_DIR, 'projects.json'), 'utf-8'));
+const talkData = JSON.parse(readFileSync(join(SRC_DIR, "talks.json"), "utf-8"));
+const photoData = JSON.parse(
+  readFileSync(join(SRC_DIR, "photos.json"), "utf-8"),
+);
+const projectsData = JSON.parse(
+  readFileSync(join(SRC_DIR, "projects.json"), "utf-8"),
+);
 
 let numTalks = 0;
 
-compileFile('index');
-mkdirSync(join(DEST_DIR, 'talk'));
+compileFile("index");
+mkdirSync(join(DEST_DIR, "talk"));
 const talksPerCategory = {};
 for (const category in talkData) {
   talksPerCategory[category] = 0;
@@ -56,21 +60,21 @@ for (const category in talkData) {
     talksPerCategory[category]++;
   }
 }
-compileFile('talks', talkData);
-compileFile('photography', photoData);
-compileFile('projects', projectsData);
+compileFile("talks", talkData);
+compileFile("photography", photoData);
+compileFile("projects", projectsData);
+cpy(join(__dirname, "assets/**/*"), DEST_DIR);
+cpy(join(__dirname, "static/**/*"), join(DEST_DIR, "static"));
+console.log(`Compiled ${numTalks} talks.`);
 for (const category in talksPerCategory) {
   console.log(`  ${category}: ${talksPerCategory[category]}`);
 }
-console.log(`Compiled ${numTalks} talks.`);
-
-cpy(join(__dirname, 'assets/**/*'), DEST_DIR);
-cpy(join(__dirname, 'static/**/*'), join(DEST_DIR, 'static'));
-console.log('Done.');
 
 function getSlug(data) {
-  const slug = `${data.event}-${data.year}-${data.title}.html`.toLowerCase().replace(/\s/g, '-');
-  let editedSlug = '';
+  const slug = `${data.event}-${data.year}-${data.title}.html`
+    .toLowerCase()
+    .replace(/\s/g, "-");
+  let editedSlug = "";
   for (let i = 0; i < slug.length; i++) {
     const code = slug.charCodeAt(i);
     if (
@@ -87,27 +91,31 @@ function getSlug(data) {
 }
 
 function getTemplate(name) {
-  return handlebars.compile(readFileSync(join(SRC_DIR, `${name}.handlebars`), 'utf-8'));
+  return handlebars.compile(
+    readFileSync(join(SRC_DIR, `${name}.handlebars`), "utf-8"),
+  );
 }
 
 function compileFile(name, data = {}) {
   const template = getTemplate(name);
   writeFileSync(
     join(DEST_DIR, `${name}.html`),
-    template({ ...data, currentYear: new Date().getFullYear() })
+    template({ ...data, currentYear: new Date().getFullYear() }),
   );
 }
 
 function compileTalkFile(data) {
   numTalks++;
-  const template = handlebars.compile(readFileSync(join(SRC_DIR, `talk-landing-page.handlebars`), 'utf-8'));
+  const template = handlebars.compile(
+    readFileSync(join(SRC_DIR, `talk-landing-page.handlebars`), "utf-8"),
+  );
   data.embed = {
     path: `/talk/${data.slug}`,
     title: `"${data.title}" at ${data.event}`,
-    description: `You can find details for my talk titled ${data.title} that I gave at ${data.event} in ${data.month}, ${data.year}`
+    description: `You can find details for my talk titled ${data.title} that I gave at ${data.event} in ${data.month}, ${data.year}`,
   };
   writeFileSync(
-    join(DEST_DIR, 'talk', data.slug),
-    template({ ...data, currentYear: new Date().getFullYear() })
+    join(DEST_DIR, "talk", data.slug),
+    template({ ...data, currentYear: new Date().getFullYear() }),
   );
 }
